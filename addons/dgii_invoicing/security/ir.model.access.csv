@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id,perm_read,perm_write,perm_create,perm_unlink
+access_dgii_arecf,dgii.arecf,model_dgii_arecf,,1,1,1,1
+access_dgii_acecf,dgii.acecf,model_dgii_acecf,,1,1,1,1
+access_dgii_anecf,dgii.anecf,model_dgii_anecf,,1,1,1,1
+access_dgii_anecf_line,dgii.anecf.line,model_dgii_anecf_line,,1,1,1,1
+access_dgii_rfce,dgii.rfce,model_dgii_rfce,,1,1,1,1

@@ -1,0 +1,19 @@
+<odoo>
+  <record id="view_company_form_dgii_cert" model="ir.ui.view">
+    <field name="name">res.company.form.dgii.cert</field>
+    <field name="model">res.company</field>
+    <field name="inherit_id" ref="base.view_company_form"/>
+    <field name="arch" type="xml">
+      <!-- Insert after the field currency_id (safe anchor) -->
+      <xpath expr="//field[@name='currency_id']" position="after">
+        <group string="DGII e-Invoicing">
+          <field name="dgii_username"/>
+          <field name="dgii_password" password="True"/>
+          <field name="dgii_cert_file" filename="dgii_cert_filename"/>
+          <field name="dgii_cert_password" password="True"/>
+          <field name="dgii_environment"/>
+        </group>
+      </xpath>
+    </field>
+  </record>
+</odoo>
