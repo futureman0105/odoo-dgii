@@ -1,0 +1,910 @@
+2025-09-11 01:03:19,559 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 01:03:19] "POST /web/dataset/call_button/account.move/action_print_pdf HTTP/1.1" 200 - 4 0.001 0.003
+2025-09-11 01:03:19,892 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: dgii_codigo_seguridad: C/31/B 
+2025-09-11 01:03:19,893 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Emisor : 132641566 
+2025-09-11 01:03:19,893 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Emisor : DOCUMENTOS ELECTRONICOS DE 02 
+2025-09-11 01:03:19,893 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Comprador : 131880681 
+2025-09-11 01:03:19,893 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Comprador : DOCUMENTOS ELECTRONICOS DE 03 
+2025-09-11 01:03:19,893 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code e-NCF : 01-04-2020 
+2025-09-11 01:03:19,893 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Total de ITIBS : 0.0 
+2025-09-11 01:03:19,893 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Monto Total : 150000.0 
+2025-09-11 01:03:19,926 3648 INFO odoo_db odoo.addons.base.models.ir_actions_report: Generating PDF on Windows platform require DPI >= 96. Using 96 instead. 
+2025-09-11 01:03:22,055 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 01:03:22] "GET /web/assets/92e9a10/web.report_assets_common.min.css HTTP/1.1" 200 - 3 0.001 0.009
+2025-09-11 01:03:22,060 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 01:03:22] "GET /web/assets/3420c8f/web.report_assets_pdf.min.css HTTP/1.1" 200 - 3 0.005 0.010
+2025-09-11 01:03:22,076 3648 INFO ? werkzeug: 127.0.0.1 - - [11/Sep/2025 01:03:22] "GET /web/static/fonts/lato/Lato-Bla-webfont.woff HTTP/1.1" 200 - 0 0.000 0.001
+2025-09-11 01:03:24,178 3648 INFO ? werkzeug: 127.0.0.1 - - [11/Sep/2025 01:03:24] "GET /web/static/fonts/lato/Lato-Hai-webfont.woff HTTP/1.1" 200 - 0 0.000 0.004
+2025-09-11 01:03:24,178 3648 INFO ? werkzeug: 127.0.0.1 - - [11/Sep/2025 01:03:24] "GET /web/static/fonts/lato/Lato-Reg-webfont.woff HTTP/1.1" 200 - 0 0.000 0.005
+2025-09-11 01:03:24,178 3648 INFO ? werkzeug: 127.0.0.1 - - [11/Sep/2025 01:03:24] "GET /web/static/fonts/lato/Lato-Lig-webfont.woff HTTP/1.1" 200 - 0 0.000 0.004
+2025-09-11 01:03:24,178 3648 INFO ? werkzeug: 127.0.0.1 - - [11/Sep/2025 01:03:24] "GET /web/static/fonts/lato/Lato-Bol-webfont.woff HTTP/1.1" 200 - 0 0.000 0.007
+2025-09-11 01:03:26,390 3648 INFO odoo_db odoo.addons.base.models.ir_actions_report: The PDF report has been generated for model: account.move, records [123]. 
+2025-09-11 01:03:26,391 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 01:03:26] "POST /report/download HTTP/1.1" 200 - 31 0.010 6.506
+2025-09-11 01:03:26,399 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 01:03:26] "POST /mail/thread/messages HTTP/1.1" 200 - 3 0.002 0.002
+2025-09-11 01:03:26,736 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 01:03:26] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 36 0.013 0.023
+2025-09-11 01:03:27,078 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 01:03:27] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.006 0.013
+2025-09-11 01:03:50,359 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-09-11 01:03:50,384 3648 INFO odoo_db odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-09-11 01:03:50,429 3648 INFO odoo_db odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-09-11 01:03:50,435 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-09-11 01:03:50,441 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 01:03:50,441 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 01:03:50,454 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-09-11 01:03:50,578 3648 INFO odoo_db odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-09-11 01:03:50,632 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.274s 
+2025-09-11 01:03:50,692 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-09-11 01:03:50,699 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-09-11 01:33:21,225 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2025-09-11 01:33:21,232 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.007s 
+2025-09-11 01:33:21,241 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2025-09-11 01:33:21,243 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2025-09-11 01:33:21,246 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2025-09-11 01:33:21,271 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.024s 
+2025-09-11 01:33:21,272 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2025-09-11 01:33:21,273 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2025-09-11 01:33:28,592 3648 INFO odoo_db odoo.addons.base.models.res_device: User 2 inserts device log (k8V3YB2I8E7blGRC3jkoQXaEsaONk9azqSJMbdKgcA) 
+2025-09-11 01:33:51,043 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2025-09-11 01:33:51,046 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.004s 
+2025-09-11 01:33:51,052 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2025-09-11 01:33:51,053 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2025-09-11 01:33:51,058 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2025-09-11 01:33:51,100 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.042s 
+2025-09-11 01:33:51,109 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2025-09-11 01:33:51,111 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2025-09-11 01:33:51,135 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2025-09-11 01:33:51,137 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.001s 
+2025-09-11 01:33:51,139 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2025-09-11 01:33:51,140 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2025-09-11 01:56:41,610 3648 INFO odoo_db odoo.addons.base.models.res_device: User 2 inserts device log (k8V3YB2I8E7blGRC3jkoQXaEsaONk9azqSJMbdKgcA) 
+2025-09-11 02:00:49,741 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Account: Post draft entries with auto_post enabled and accounting date up to today' (32) starting 
+2025-09-11 02:00:51,225 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Account: Post draft entries with auto_post enabled and accounting date up to today' (32) done in 1.485s 
+2025-09-11 02:00:51,380 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Account: Post draft entries with auto_post enabled and accounting date up to today' (32) processed 0 records, 0 records remaining 
+2025-09-11 02:00:51,383 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Account: Post draft entries with auto_post enabled and accounting date up to today' (32) completed 
+2025-09-11 02:02:38,782 3648 INFO odoo_db odoo.addons.base.models.res_device: User 2 inserts device log (k8V3YB2I8E7blGRC3jkoQXaEsaONk9azqSJMbdKgcA) 
+2025-09-11 02:33:24,318 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2025-09-11 02:33:24,332 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.015s 
+2025-09-11 02:33:24,335 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2025-09-11 02:33:24,337 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2025-09-11 02:33:24,340 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2025-09-11 02:33:24,361 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.021s 
+2025-09-11 02:33:24,364 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2025-09-11 02:33:24,367 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2025-09-11 02:33:53,367 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2025-09-11 02:33:53,384 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.017s 
+2025-09-11 02:33:53,385 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2025-09-11 02:33:53,386 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2025-09-11 02:33:53,400 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2025-09-11 02:33:53,405 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.004s 
+2025-09-11 02:33:53,407 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2025-09-11 02:33:53,408 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2025-09-11 02:33:53,412 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2025-09-11 02:33:53,414 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.002s 
+2025-09-11 02:33:53,416 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2025-09-11 02:33:53,420 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2025-09-11 03:33:23,676 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2025-09-11 03:33:23,683 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.008s 
+2025-09-11 03:33:23,695 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2025-09-11 03:33:23,696 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2025-09-11 03:33:23,837 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2025-09-11 03:33:23,845 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.007s 
+2025-09-11 03:33:23,852 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2025-09-11 03:33:23,853 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2025-09-11 03:33:52,463 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2025-09-11 03:33:52,467 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.003s 
+2025-09-11 03:33:52,468 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2025-09-11 03:33:52,470 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2025-09-11 03:33:52,475 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2025-09-11 03:33:52,478 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.004s 
+2025-09-11 03:33:52,480 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2025-09-11 03:33:52,481 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2025-09-11 03:33:52,487 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2025-09-11 03:33:52,488 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.001s 
+2025-09-11 03:33:52,491 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2025-09-11 03:33:52,493 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2025-09-11 04:33:24,639 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2025-09-11 04:33:24,657 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.017s 
+2025-09-11 04:33:24,660 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2025-09-11 04:33:24,663 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2025-09-11 04:33:24,695 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2025-09-11 04:33:24,703 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.008s 
+2025-09-11 04:33:24,705 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2025-09-11 04:33:24,708 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2025-09-11 04:33:53,155 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2025-09-11 04:33:53,188 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.033s 
+2025-09-11 04:33:53,190 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2025-09-11 04:33:53,192 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2025-09-11 04:33:53,195 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2025-09-11 04:33:53,200 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.004s 
+2025-09-11 04:33:53,202 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2025-09-11 04:33:53,203 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2025-09-11 04:33:53,207 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2025-09-11 04:33:53,209 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.002s 
+2025-09-11 04:33:53,209 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2025-09-11 04:33:53,211 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2025-09-11 05:20:20,975 3648 INFO odoo_db odoo.addons.base.models.res_device: User 2 inserts device log (k8V3YB2I8E7blGRC3jkoQXaEsaONk9azqSJMbdKgcA) 
+2025-09-11 05:20:21,011 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:21] "GET / HTTP/1.1" 303 - 2 0.000 0.065
+2025-09-11 05:20:21,262 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:21] "GET /odoo HTTP/1.1" 200 - 18 0.007 0.056
+2025-09-11 05:20:21,789 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:21] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 3 0.001 0.023
+2025-09-11 05:20:22,176 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:22] "POST /web/action/load HTTP/1.1" 200 - 6 0.017 0.069
+2025-09-11 05:20:22,244 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:22] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.006 0.064
+2025-09-11 05:20:22,253 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:22] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.004 0.050
+2025-09-11 05:20:22,318 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:22] "POST /mail/data HTTP/1.1" 200 - 23 0.158 0.066
+2025-09-11 05:20:22,692 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:22] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.061 0.004
+2025-09-11 05:20:22,715 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:22] "POST /mail/data HTTP/1.1" 200 - 61 0.118 0.072
+2025-09-11 05:20:23,104 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:23] "POST /mail/inbox/messages HTTP/1.1" 200 - 4 0.001 0.031
+2025-09-11 05:20:24,518 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:24] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.062
+2025-09-11 05:20:29,887 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:29] "POST /web/action/load HTTP/1.1" 200 - 11 0.004 0.014
+2025-09-11 05:20:30,183 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:30] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 3 0.001 0.065
+2025-09-11 05:20:30,275 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:30] "POST /web/dataset/call_kw/account.move/web_search_read HTTP/1.1" 200 - 8 0.018 0.032
+2025-09-11 05:20:30,511 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:30] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.003
+2025-09-11 05:20:31,568 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:31] "POST /web/action/load HTTP/1.1" 200 - 10 0.002 0.004
+2025-09-11 05:20:31,964 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:31] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 49 0.036 0.028
+2025-09-11 05:20:32,170 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:32] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.003
+2025-09-11 05:20:32,376 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:32] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 52 0.089 0.013
+2025-09-11 05:20:32,859 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:32] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.007 0.577
+2025-09-11 05:20:34,986 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:20:34,987 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:20:34,987 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:20:35,503 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user admin #2 via 127.0.0.1 
+2025-09-11 05:20:35,612 3648 INFO odoo_db odoo.modules.loading: loading 1 modules... 
+2025-09-11 05:20:35,618 3648 INFO odoo_db odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-09-11 05:20:35,631 3648 INFO odoo_db odoo.modules.loading: updating modules list 
+2025-09-11 05:20:35,631 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2025-09-11 05:20:36,061 3648 INFO odoo_db odoo.modules.loading: loading 51 modules... 
+2025-09-11 05:20:36,087 3648 INFO odoo_db odoo.modules.loading: Loading module dgii_invoicing (51/51) 
+2025-09-11 05:20:36,205 3648 INFO odoo_db odoo.modules.registry: module dgii_invoicing: creating or updating database tables 
+2025-09-11 05:20:36,438 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/security/ir.model.access.csv 
+2025-09-11 05:20:36,458 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/account_move_views.xml 
+2025-09-11 05:20:36,654 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/settings_views.xml 
+2025-09-11 05:20:36,669 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ir_sequence_data.xml 
+2025-09-11 05:20:36,758 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ncf_sequence.xml 
+2025-09-11 05:20:36,765 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_invoice_document.xml 
+2025-09-11 05:20:36,835 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_credit_note_document.xml 
+2025-09-11 05:20:36,877 3648 INFO odoo_db odoo.addons.base.models.ir_module: module dgii_invoicing: loading translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:20:36,877 3648 INFO odoo_db odoo.tools.translate: loading base translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:20:36,905 3648 INFO odoo_db odoo.modules.loading: Module dgii_invoicing loaded in 0.82s, 299 queries (+299 other) 
+2025-09-11 05:20:36,905 3648 INFO odoo_db odoo.modules.loading: 51 modules loaded in 0.84s, 299 queries (+299 extra) 
+2025-09-11 05:20:37,479 3648 INFO odoo_db odoo.modules.loading: Modules loaded. 
+2025-09-11 05:20:37,482 3648 INFO odoo_db odoo.modules.registry: Registry changed, signaling through the database 
+2025-09-11 05:20:37,482 3648 INFO odoo_db odoo.modules.registry: Registry loaded in 1.933s 
+2025-09-11 05:20:37,482 3648 INFO odoo_db odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2025-09-11 05:20:37,516 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:37] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 4637 1.333 1.201
+2025-09-11 05:20:37,844 3648 INFO odoo_db odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-09-11 05:20:38,319 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:38] "GET /odoo HTTP/1.1" 200 - 101 0.028 0.452
+2025-09-11 05:20:38,565 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:38] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.025 0.057
+2025-09-11 05:20:38,847 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:38] "POST /web/action/load HTTP/1.1" 200 - 7 0.004 0.003
+2025-09-11 05:20:38,865 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:38] "POST /mail/data HTTP/1.1" 200 - 34 0.012 0.014
+2025-09-11 05:20:38,900 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:38] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.010
+2025-09-11 05:20:38,906 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:38] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.001 0.018
+2025-09-11 05:20:38,919 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:38] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.026 0.007
+2025-09-11 05:20:39,390 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:39] "POST /mail/data HTTP/1.1" 200 - 62 0.018 0.158
+2025-09-11 05:20:39,786 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:39] "POST /mail/inbox/messages HTTP/1.1" 200 - 5 0.004 0.038
+2025-09-11 05:20:41,031 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:41] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.003
+2025-09-11 05:20:41,653 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:41] "POST /web/action/load HTTP/1.1" 200 - 11 0.005 0.006
+2025-09-11 05:20:42,079 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:42] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 122 0.023 0.152
+2025-09-11 05:20:42,106 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:42] "POST /web/dataset/call_kw/account.move/web_search_read HTTP/1.1" 200 - 12 0.006 0.011
+2025-09-11 05:20:42,414 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:42] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.004
+2025-09-11 05:20:44,940 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:44] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 50 0.016 0.022
+2025-09-11 05:20:45,185 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:45] "POST /mail/thread/data HTTP/1.1" 200 - 33 0.009 0.010
+2025-09-11 05:20:45,375 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:45] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.004 0.018
+2025-09-11 05:20:46,685 3648 INFO odoo_db odoo.addons.account.models.account_move: preview invoice---- 
+2025-09-11 05:20:46,687 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:46] "POST /web/dataset/call_button/account.move/preview_invoice HTTP/1.1" 200 - 2 0.000 0.004
+2025-09-11 05:20:47,308 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:47] "GET /my/invoices/115?access_token=3fe6809a-5e42-4767-80df-a2dec179898c HTTP/1.1" 200 - 136 0.035 0.239
+2025-09-11 05:20:47,353 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:47] "GET /logo.png?company=3 HTTP/1.1" 304 - 2 0.000 0.004
+2025-09-11 05:20:48,027 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: dgii_codigo_seguridad: C/31/B 
+2025-09-11 05:20:48,028 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Emisor : 132641566 
+2025-09-11 05:20:48,028 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Emisor : DOCUMENTOS ELECTRONICOS DE 02 
+2025-09-11 05:20:48,028 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Comprador : 131880681 
+2025-09-11 05:20:48,028 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Comprador : DOCUMENTOS ELECTRONICOS DE 03 
+2025-09-11 05:20:48,028 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code e-NCF : 01-04-2020 
+2025-09-11 05:20:48,028 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Total de ITIBS : 0.0 
+2025-09-11 05:20:48,028 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Monto Total : 66000.0 
+2025-09-11 05:20:48,317 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:48] "GET /my/invoices/115?access_token=3fe6809a-5e42-4767-80df-a2dec179898c&report_type=html HTTP/1.1" 200 - 59 0.016 0.486
+2025-09-11 05:20:48,845 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:48] "GET /web/bundle/portal.assets_chatter?lang=en_US&debug=1 HTTP/1.1" 200 - 8 0.003 0.053
+2025-09-11 05:20:49,268 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:49] "POST /portal/chatter_init HTTP/1.1" 200 - 16 0.012 0.007
+2025-09-11 05:20:49,300 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:49] "GET /web/bundle/portal.assets_chatter_style?lang=en_US&debug=1 HTTP/1.1" 200 - 9 0.006 0.032
+2025-09-11 05:20:49,518 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:49] "POST /mail/thread/data HTTP/1.1" 200 - 3 0.001 0.005
+2025-09-11 05:20:49,660 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:20:49] "POST /mail/chatter_fetch HTTP/1.1" 200 - 7 0.003 0.004
+2025-09-11 05:21:19,857 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:19] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 3 0.001 0.007
+2025-09-11 05:21:20,225 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:20] "POST /web/action/load HTTP/1.1" 200 - 12 0.006 0.010
+2025-09-11 05:21:20,230 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:20] "POST /mail/data HTTP/1.1" 200 - 23 0.009 0.009
+2025-09-11 05:21:20,245 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:20] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.004
+2025-09-11 05:21:20,256 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:20] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 3 0.001 0.016
+2025-09-11 05:21:20,259 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:20] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.005
+2025-09-11 05:21:20,506 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:20] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 36 0.006 0.027
+2025-09-11 05:21:20,542 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:20] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.003 0.006
+2025-09-11 05:21:20,670 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:20] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.006 0.043
+2025-09-11 05:21:20,974 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:20] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.006 0.011
+2025-09-11 05:21:22,048 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:22] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.004
+2025-09-11 05:21:22,302 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:22] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.007
+2025-09-11 05:21:22,330 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:22] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 50 0.009 0.030
+2025-09-11 05:21:22,373 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:22] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.003
+2025-09-11 05:21:22,679 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:22] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 52 0.015 0.013
+2025-09-11 05:21:22,691 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:22] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.003 0.037
+2025-09-11 05:21:25,098 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:21:25,098 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:21:25,098 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:21:25,552 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user admin #2 via 127.0.0.1 
+2025-09-11 05:21:25,595 3648 INFO odoo_db odoo.modules.loading: loading 1 modules... 
+2025-09-11 05:21:25,598 3648 INFO odoo_db odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-09-11 05:21:25,611 3648 INFO odoo_db odoo.modules.loading: updating modules list 
+2025-09-11 05:21:25,612 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2025-09-11 05:21:26,071 3648 INFO odoo_db odoo.modules.loading: loading 51 modules... 
+2025-09-11 05:21:26,090 3648 INFO odoo_db odoo.modules.loading: Loading module dgii_invoicing (51/51) 
+2025-09-11 05:21:26,251 3648 INFO odoo_db odoo.modules.registry: module dgii_invoicing: creating or updating database tables 
+2025-09-11 05:21:26,338 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/security/ir.model.access.csv 
+2025-09-11 05:21:26,344 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/account_move_views.xml 
+2025-09-11 05:21:26,375 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/settings_views.xml 
+2025-09-11 05:21:26,382 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ir_sequence_data.xml 
+2025-09-11 05:21:26,387 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ncf_sequence.xml 
+2025-09-11 05:21:26,389 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_invoice_document.xml 
+2025-09-11 05:21:26,423 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_credit_note_document.xml 
+2025-09-11 05:21:26,438 3648 INFO odoo_db odoo.addons.base.models.ir_module: module dgii_invoicing: loading translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:21:26,439 3648 INFO odoo_db odoo.tools.translate: loading base translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:21:26,519 3648 INFO odoo_db odoo.modules.loading: Module dgii_invoicing loaded in 0.43s, 299 queries (+299 other) 
+2025-09-11 05:21:26,519 3648 INFO odoo_db odoo.modules.loading: 51 modules loaded in 0.45s, 299 queries (+299 extra) 
+2025-09-11 05:21:27,025 3648 INFO odoo_db odoo.modules.loading: Modules loaded. 
+2025-09-11 05:21:27,030 3648 INFO odoo_db odoo.modules.registry: Registry changed, signaling through the database 
+2025-09-11 05:21:27,030 3648 INFO odoo_db odoo.modules.registry: Registry loaded in 1.440s 
+2025-09-11 05:21:27,030 3648 INFO odoo_db odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2025-09-11 05:21:27,033 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:27] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 4641 0.978 0.959
+2025-09-11 05:21:27,356 3648 INFO odoo_db odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-09-11 05:21:27,749 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:27] "GET /odoo HTTP/1.1" 200 - 101 0.025 0.370
+2025-09-11 05:21:27,976 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:27] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.000 0.061
+2025-09-11 05:21:28,286 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:28] "POST /web/action/load HTTP/1.1" 200 - 7 0.005 0.006
+2025-09-11 05:21:28,301 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:28] "POST /mail/data HTTP/1.1" 200 - 34 0.013 0.011
+2025-09-11 05:21:28,336 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:28] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.010
+2025-09-11 05:21:28,338 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:28] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.011 0.005
+2025-09-11 05:21:28,341 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:28] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.004 0.014
+2025-09-11 05:21:28,733 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:28] "POST /mail/data HTTP/1.1" 200 - 62 0.024 0.059
+2025-09-11 05:21:29,115 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:29] "POST /mail/inbox/messages HTTP/1.1" 200 - 5 0.004 0.023
+2025-09-11 05:21:30,380 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:30] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.006
+2025-09-11 05:21:30,965 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:30] "POST /web/action/load HTTP/1.1" 200 - 11 0.006 0.007
+2025-09-11 05:21:31,389 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:31] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 122 0.023 0.149
+2025-09-11 05:21:31,414 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:31] "POST /web/dataset/call_kw/account.move/web_search_read HTTP/1.1" 200 - 12 0.003 0.012
+2025-09-11 05:21:31,723 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:31] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.005
+2025-09-11 05:21:34,017 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:34] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 50 0.013 0.024
+2025-09-11 05:21:34,264 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:34] "POST /mail/thread/data HTTP/1.1" 200 - 33 0.003 0.017
+2025-09-11 05:21:34,429 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:34] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.004 0.009
+2025-09-11 05:21:35,236 3648 INFO odoo_db odoo.addons.account.models.account_move: preview invoice---- 
+2025-09-11 05:21:35,239 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:35] "POST /web/dataset/call_button/account.move/preview_invoice HTTP/1.1" 200 - 2 0.001 0.004
+2025-09-11 05:21:35,842 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:35] "GET /my/invoices/115?access_token=3fe6809a-5e42-4767-80df-a2dec179898c HTTP/1.1" 200 - 136 0.028 0.250
+2025-09-11 05:21:35,874 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:35] "GET /logo.png?company=3 HTTP/1.1" 304 - 2 0.002 0.001
+2025-09-11 05:21:36,340 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: dgii_codigo_seguridad: C/31/B 
+2025-09-11 05:21:36,340 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Emisor : 132641566 
+2025-09-11 05:21:36,340 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Emisor : DOCUMENTOS ELECTRONICOS DE 02 
+2025-09-11 05:21:36,340 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Comprador : 131880681 
+2025-09-11 05:21:36,340 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Comprador : DOCUMENTOS ELECTRONICOS DE 03 
+2025-09-11 05:21:36,340 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code e-NCF : 01-04-2020 
+2025-09-11 05:21:36,340 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Total de ITIBS : 0.0 
+2025-09-11 05:21:36,340 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Monto Total : 66000.0 
+2025-09-11 05:21:36,428 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:36] "GET /my/invoices/115?access_token=3fe6809a-5e42-4767-80df-a2dec179898c&report_type=html HTTP/1.1" 200 - 59 0.014 0.128
+2025-09-11 05:21:36,644 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:36] "GET /web/bundle/portal.assets_chatter?lang=en_US&debug=1 HTTP/1.1" 200 - 8 0.002 0.069
+2025-09-11 05:21:37,005 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:37] "GET /web/bundle/portal.assets_chatter_style?lang=en_US&debug=1 HTTP/1.1" 200 - 9 0.005 0.029
+2025-09-11 05:21:37,100 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:37] "POST /portal/chatter_init HTTP/1.1" 200 - 16 0.117 0.010
+2025-09-11 05:21:37,246 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:37] "POST /mail/thread/data HTTP/1.1" 200 - 3 0.001 0.006
+2025-09-11 05:21:37,340 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:21:37] "POST /mail/chatter_fetch HTTP/1.1" 200 - 7 0.002 0.008
+2025-09-11 05:21:53,617 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-09-11 05:21:53,695 3648 INFO odoo_db odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-09-11 05:21:53,782 3648 INFO odoo_db odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-09-11 05:21:53,790 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-09-11 05:21:53,815 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 4 entries 
+2025-09-11 05:21:53,816 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:21:53,832 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-09-11 05:21:53,944 3648 INFO odoo_db odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-09-11 05:21:54,085 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.468s 
+2025-09-11 05:21:54,129 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-09-11 05:21:54,134 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-09-11 05:22:54,166 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-09-11 05:22:54,187 3648 INFO odoo_db odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-09-11 05:22:54,224 3648 INFO odoo_db odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-09-11 05:22:54,228 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-09-11 05:22:54,229 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:22:54,230 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:22:54,236 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-09-11 05:22:54,337 3648 INFO odoo_db odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-09-11 05:22:54,373 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.207s 
+2025-09-11 05:22:54,496 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-09-11 05:22:54,502 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-09-11 05:25:28,215 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:28] "POST /web/action/load HTTP/1.1" 200 - 12 0.002 0.006
+2025-09-11 05:25:28,268 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:28] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.006 0.004
+2025-09-11 05:25:28,284 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:28] "POST /mail/data HTTP/1.1" 200 - 23 0.018 0.011
+2025-09-11 05:25:28,311 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:28] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.002 0.006
+2025-09-11 05:25:28,433 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:28] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 3 0.149 0.026
+2025-09-11 05:25:28,502 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:28] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 36 0.012 0.019
+2025-09-11 05:25:28,537 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:28] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 3 0.001 0.004
+2025-09-11 05:25:28,767 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:28] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.011 0.007
+2025-09-11 05:25:28,935 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:28] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.005 0.009
+2025-09-11 05:25:30,076 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:30] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.004
+2025-09-11 05:25:31,436 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:31] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 2.484
+2025-09-11 05:25:31,449 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:31] "POST /web/action/load HTTP/1.1" 200 - 9 0.146 0.004
+2025-09-11 05:25:33,311 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:33] "POST /web/action/load HTTP/1.1" 200 - 9 0.004 0.003
+2025-09-11 05:25:34,144 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:34] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 397 0.083 2.496
+2025-09-11 05:25:34,171 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:34] "POST /web/dataset/call_kw/res.company/get_views HTTP/1.1" 200 - 324 0.101 0.433
+2025-09-11 05:25:34,484 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:34] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.003
+2025-09-11 05:25:34,487 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:34] "POST /web/dataset/call_kw/res.company/web_search_read HTTP/1.1" 200 - 4 0.002 0.005
+2025-09-11 05:25:35,927 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:35] "POST /web/dataset/call_kw/res.company/web_read HTTP/1.1" 200 - 18 0.261 0.154
+2025-09-11 05:25:36,462 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:36] "GET /web/image/res.company/3/logo?unique=1757568335939 HTTP/1.1" 200 - 10 0.004 0.008
+2025-09-11 05:25:36,490 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:36] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.027 0.013
+2025-09-11 05:25:36,834 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:36] "POST /mail/thread/data HTTP/1.1" 200 - 21 0.372 0.014
+2025-09-11 05:25:48,674 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:48] "POST /web/dataset/call_kw/res.company/web_save HTTP/1.1" 200 - 34 0.039 0.083
+2025-09-11 05:25:48,998 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:48] "POST /mail/thread/messages HTTP/1.1" 200 - 3 0.002 0.007
+2025-09-11 05:25:49,016 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:49] "POST /web/session/get_session_info HTTP/1.1" 200 - 18 0.012 0.018
+2025-09-11 05:25:49,021 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:49] "POST /mail/thread/data HTTP/1.1" 200 - 16 0.017 0.013
+2025-09-11 05:25:49,276 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:49] "GET /odoo/companies/3 HTTP/1.1" 200 - 18 0.005 0.020
+2025-09-11 05:25:49,526 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:49] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 3 0.001 0.004
+2025-09-11 05:25:50,020 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:50] "POST /web/action/load HTTP/1.1" 200 - 10 0.004 0.005
+2025-09-11 05:25:50,029 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:50] "POST /mail/data HTTP/1.1" 200 - 23 0.008 0.010
+2025-09-11 05:25:50,039 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:50] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.000 0.007
+2025-09-11 05:25:50,045 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:50] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.006 0.007
+2025-09-11 05:25:50,164 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:50] "POST /web/dataset/call_kw/res.company/get_views HTTP/1.1" 200 - 263 0.044 0.089
+2025-09-11 05:25:50,279 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:50] "POST /web/dataset/call_kw/res.company/web_read HTTP/1.1" 200 - 14 0.002 0.016
+2025-09-11 05:25:50,343 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:50] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.005 0.006
+2025-09-11 05:25:50,536 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:50] "POST /mail/thread/data HTTP/1.1" 200 - 16 0.004 0.055
+2025-09-11 05:25:50,641 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:50] "GET /web/image/res.company/3/logo?unique=1757568350307 HTTP/1.1" 200 - 5 0.001 0.006
+2025-09-11 05:25:50,665 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:50] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.005 0.009
+2025-09-11 05:25:52,544 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:25:52] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.003
+2025-09-11 05:26:25,221 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:26:25] "POST /web/dataset/call_kw/res.company/name_search HTTP/1.1" 200 - 2 0.000 0.004
+2025-09-11 05:26:28,737 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:26:28] "POST /web/dataset/call_kw/res.company/web_save HTTP/1.1" 200 - 29 0.017 0.035
+2025-09-11 05:26:29,072 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:26:29] "POST /mail/thread/data HTTP/1.1" 200 - 16 0.014 0.007
+2025-09-11 05:26:29,076 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:26:29] "POST /web/session/get_session_info HTTP/1.1" 200 - 18 0.011 0.016
+2025-09-11 05:26:29,084 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:26:29] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.019 0.015
+2025-09-11 05:26:29,329 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:26:29] "GET /odoo/companies/3 HTTP/1.1" 200 - 18 0.006 0.012
+2025-09-11 05:26:29,899 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:26:29] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 3 0.002 0.007
+2025-09-11 05:26:30,400 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:26:30] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.008
+2025-09-11 05:26:30,401 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:26:30] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.002 0.009
+2025-09-11 05:26:30,723 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:26:30] "POST /mail/data HTTP/1.1" 200 - 23 0.008 0.013
+2025-09-11 05:26:32,141 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:26:32] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.001
+2025-09-11 05:27:01,257 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:27:01] "POST /web/action/load HTTP/1.1" 200 - 10 0.006 0.007
+2025-09-11 05:27:01,587 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:27:01] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.005 0.008
+2025-09-11 05:27:01,671 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:27:01] "POST /web/dataset/call_kw/res.company/get_views HTTP/1.1" 200 - 263 0.024 0.095
+2025-09-11 05:27:02,001 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:27:02] "POST /web/dataset/call_kw/res.company/web_read HTTP/1.1" 200 - 14 0.005 0.007
+2025-09-11 05:27:02,265 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:27:02] "POST /mail/thread/data HTTP/1.1" 200 - 16 0.004 0.007
+2025-09-11 05:27:02,393 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:27:02] "GET /web/image/res.company/3/logo?unique=1757568422029 HTTP/1.1" 200 - 5 0.005 0.009
+2025-09-11 05:27:02,406 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:27:02] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.014 0.013
+2025-09-11 05:28:44,299 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:44] "POST /web/action/load HTTP/1.1" 200 - 10 0.002 0.006
+2025-09-11 05:28:44,596 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:44] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 49 0.013 0.026
+2025-09-11 05:28:44,640 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:44] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.002
+2025-09-11 05:28:44,947 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:44] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 52 0.017 0.014
+2025-09-11 05:28:44,961 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:44] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.041
+2025-09-11 05:28:47,425 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:28:47,425 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:28:47,425 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:28:47,869 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user admin #2 via 127.0.0.1 
+2025-09-11 05:28:47,964 3648 INFO odoo_db odoo.modules.loading: loading 1 modules... 
+2025-09-11 05:28:47,968 3648 INFO odoo_db odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-09-11 05:28:47,983 3648 INFO odoo_db odoo.modules.loading: updating modules list 
+2025-09-11 05:28:47,984 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2025-09-11 05:28:48,428 3648 INFO odoo_db odoo.modules.loading: loading 51 modules... 
+2025-09-11 05:28:48,456 3648 INFO odoo_db odoo.modules.loading: Loading module dgii_invoicing (51/51) 
+2025-09-11 05:28:48,580 3648 INFO odoo_db odoo.modules.registry: module dgii_invoicing: creating or updating database tables 
+2025-09-11 05:28:48,685 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/security/ir.model.access.csv 
+2025-09-11 05:28:48,695 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/account_move_views.xml 
+2025-09-11 05:28:48,734 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/settings_views.xml 
+2025-09-11 05:28:48,742 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ir_sequence_data.xml 
+2025-09-11 05:28:48,747 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ncf_sequence.xml 
+2025-09-11 05:28:48,751 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_invoice_document.xml 
+2025-09-11 05:28:48,781 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_credit_note_document.xml 
+2025-09-11 05:28:48,798 3648 INFO odoo_db odoo.addons.base.models.ir_module: module dgii_invoicing: loading translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:28:48,798 3648 INFO odoo_db odoo.tools.translate: loading base translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:28:48,970 3648 INFO odoo_db odoo.modules.loading: Module dgii_invoicing loaded in 0.51s, 299 queries (+299 other) 
+2025-09-11 05:28:48,970 3648 INFO odoo_db odoo.modules.loading: 51 modules loaded in 0.54s, 299 queries (+299 extra) 
+2025-09-11 05:28:49,522 3648 INFO odoo_db odoo.modules.loading: Modules loaded. 
+2025-09-11 05:28:49,526 3648 INFO odoo_db odoo.modules.registry: Registry changed, signaling through the database 
+2025-09-11 05:28:49,527 3648 INFO odoo_db odoo.modules.registry: Registry loaded in 1.568s 
+2025-09-11 05:28:49,527 3648 INFO odoo_db odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2025-09-11 05:28:49,529 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:49] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 4637 0.943 1.165
+2025-09-11 05:28:49,845 3648 INFO odoo_db odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-09-11 05:28:50,251 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:50] "GET /odoo HTTP/1.1" 200 - 101 0.018 0.389
+2025-09-11 05:28:50,668 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:50] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.001 0.007
+2025-09-11 05:28:51,012 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:51] "POST /web/action/load HTTP/1.1" 200 - 7 0.003 0.003
+2025-09-11 05:28:51,028 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:51] "POST /mail/data HTTP/1.1" 200 - 34 0.008 0.015
+2025-09-11 05:28:51,055 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:51] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.007 0.004
+2025-09-11 05:28:51,057 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:51] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.003 0.009
+2025-09-11 05:28:51,061 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:51] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.002
+2025-09-11 05:28:51,306 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:51] "POST /mail/data HTTP/1.1" 200 - 62 0.016 0.024
+2025-09-11 05:28:51,365 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:51] "POST /mail/inbox/messages HTTP/1.1" 200 - 5 0.003 0.002
+2025-09-11 05:28:52,983 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:52] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2025-09-11 05:28:56,516 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:56] "POST /web/action/load HTTP/1.1" 200 - 11 0.004 0.006
+2025-09-11 05:28:56,943 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:56] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 122 0.026 0.147
+2025-09-11 05:28:56,967 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:56] "POST /web/dataset/call_kw/account.move/web_search_read HTTP/1.1" 200 - 12 0.002 0.014
+2025-09-11 05:28:57,274 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:57] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.006
+2025-09-11 05:28:58,721 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:58] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 50 0.020 0.018
+2025-09-11 05:28:58,971 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:58] "POST /mail/thread/data HTTP/1.1" 200 - 33 0.010 0.012
+2025-09-11 05:28:59,144 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:28:59] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.005 0.015
+2025-09-11 05:29:02,907 3648 INFO odoo_db odoo.addons.account.models.account_move: preview invoice---- 
+2025-09-11 05:29:02,910 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:02] "POST /web/dataset/call_button/account.move/preview_invoice HTTP/1.1" 200 - 2 0.001 0.003
+2025-09-11 05:29:03,510 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:03] "GET /my/invoices/113?access_token=892805df-1187-49e9-a38b-56c1bc7d6415 HTTP/1.1" 200 - 136 0.023 0.216
+2025-09-11 05:29:03,592 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:03] "GET /logo.png?company=3 HTTP/1.1" 200 - 2 0.000 0.057
+2025-09-11 05:29:03,968 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: dgii_codigo_seguridad: C/31/B 
+2025-09-11 05:29:03,968 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Emisor : 132641566 
+2025-09-11 05:29:03,968 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Emisor : DOCUMENTOS ELECTRONICOS DE 02 
+2025-09-11 05:29:03,968 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Comprador : 131880681 
+2025-09-11 05:29:03,968 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Comprador : DOCUMENTOS ELECTRONICOS DE 03 
+2025-09-11 05:29:03,968 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code e-NCF : 02-04-2020 
+2025-09-11 05:29:03,969 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Total de ITIBS : 0.0 
+2025-09-11 05:29:03,969 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Monto Total : 400000.0 
+2025-09-11 05:29:04,054 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:04] "GET /my/invoices/113?access_token=892805df-1187-49e9-a38b-56c1bc7d6415&report_type=html HTTP/1.1" 200 - 59 0.012 0.118
+2025-09-11 05:29:04,282 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:04] "GET /web/bundle/portal.assets_chatter?lang=en_US&debug=1 HTTP/1.1" 200 - 8 0.001 0.063
+2025-09-11 05:29:04,645 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:04] "POST /portal/chatter_init HTTP/1.1" 200 - 16 0.010 0.006
+2025-09-11 05:29:04,675 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:04] "GET /web/bundle/portal.assets_chatter_style?lang=en_US&debug=1 HTTP/1.1" 200 - 9 0.001 0.045
+2025-09-11 05:29:04,885 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:04] "POST /mail/thread/data HTTP/1.1" 200 - 3 0.002 0.006
+2025-09-11 05:29:05,009 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:05] "POST /mail/chatter_fetch HTTP/1.1" 200 - 7 0.005 0.003
+2025-09-11 05:29:51,591 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:51] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.004 0.007
+2025-09-11 05:29:51,930 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:51] "POST /web/action/load HTTP/1.1" 200 - 12 0.010 0.014
+2025-09-11 05:29:51,931 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:51] "POST /mail/data HTTP/1.1" 200 - 23 0.021 0.019
+2025-09-11 05:29:51,945 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:51] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 3 0.003 0.008
+2025-09-11 05:29:51,949 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:51] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.007 0.012
+2025-09-11 05:29:52,269 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:52] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 3 0.003 0.018
+2025-09-11 05:29:52,274 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:52] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.007
+2025-09-11 05:29:53,213 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:53] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 36 0.597 0.023
+2025-09-11 05:29:53,392 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:53] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.009 0.018
+2025-09-11 05:29:53,687 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:53] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.007 0.010
+2025-09-11 05:29:53,845 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:53] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.002
+2025-09-11 05:29:54,410 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:54] "POST /web/action/load HTTP/1.1" 200 - 10 0.004 0.006
+2025-09-11 05:29:54,607 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-09-11 05:29:54,643 3648 INFO odoo_db odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-09-11 05:29:54,698 3648 INFO odoo_db odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-09-11 05:29:54,704 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-09-11 05:29:54,707 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:29:54,708 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:29:54,723 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-09-11 05:29:54,780 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:54] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 50 0.073 0.041
+2025-09-11 05:29:54,789 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:54] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.004
+2025-09-11 05:29:54,939 3648 INFO odoo_db odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-09-11 05:29:54,990 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.383s 
+2025-09-11 05:29:55,049 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-09-11 05:29:55,052 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-09-11 05:29:55,120 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:55] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 52 0.011 0.021
+2025-09-11 05:29:55,129 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:55] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.003 0.036
+2025-09-11 05:29:57,507 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:29:57,507 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:29:57,507 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:29:57,953 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user admin #2 via 127.0.0.1 
+2025-09-11 05:29:57,978 3648 INFO odoo_db odoo.modules.loading: loading 1 modules... 
+2025-09-11 05:29:57,982 3648 INFO odoo_db odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-09-11 05:29:57,998 3648 INFO odoo_db odoo.modules.loading: updating modules list 
+2025-09-11 05:29:57,998 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2025-09-11 05:29:58,519 3648 INFO odoo_db odoo.modules.loading: loading 51 modules... 
+2025-09-11 05:29:58,539 3648 INFO odoo_db odoo.modules.loading: Loading module dgii_invoicing (51/51) 
+2025-09-11 05:29:58,733 3648 INFO odoo_db odoo.modules.registry: module dgii_invoicing: creating or updating database tables 
+2025-09-11 05:29:58,838 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/security/ir.model.access.csv 
+2025-09-11 05:29:58,845 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/account_move_views.xml 
+2025-09-11 05:29:58,881 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/settings_views.xml 
+2025-09-11 05:29:58,890 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ir_sequence_data.xml 
+2025-09-11 05:29:58,895 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ncf_sequence.xml 
+2025-09-11 05:29:58,898 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_invoice_document.xml 
+2025-09-11 05:29:58,928 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_credit_note_document.xml 
+2025-09-11 05:29:58,948 3648 INFO odoo_db odoo.addons.base.models.ir_module: module dgii_invoicing: loading translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:29:58,948 3648 INFO odoo_db odoo.tools.translate: loading base translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:29:58,960 3648 INFO odoo_db odoo.modules.loading: Module dgii_invoicing loaded in 0.42s, 299 queries (+299 other) 
+2025-09-11 05:29:58,960 3648 INFO odoo_db odoo.modules.loading: 51 modules loaded in 0.44s, 299 queries (+299 extra) 
+2025-09-11 05:29:59,455 3648 INFO odoo_db odoo.modules.loading: Modules loaded. 
+2025-09-11 05:29:59,458 3648 INFO odoo_db odoo.modules.registry: Registry changed, signaling through the database 
+2025-09-11 05:29:59,458 3648 INFO odoo_db odoo.modules.registry: Registry loaded in 1.484s 
+2025-09-11 05:29:59,458 3648 INFO odoo_db odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2025-09-11 05:29:59,460 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:59] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 4641 0.927 1.033
+2025-09-11 05:29:59,470 3648 INFO odoo_db odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-09-11 05:29:59,906 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:29:59] "GET /odoo HTTP/1.1" 200 - 101 0.014 0.424
+2025-09-11 05:30:00,533 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:00] "POST /web/action/load HTTP/1.1" 200 - 7 0.004 0.005
+2025-09-11 05:30:00,644 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:00] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.016 0.071
+2025-09-11 05:30:00,645 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:00] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.005 0.083
+2025-09-11 05:30:00,645 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:00] "POST /mail/data HTTP/1.1" 200 - 34 0.023 0.066
+2025-09-11 05:30:00,652 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:00] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.005 0.076
+2025-09-11 05:30:00,811 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:00] "POST /mail/data HTTP/1.1" 200 - 62 0.018 0.021
+2025-09-11 05:30:00,883 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:00] "POST /mail/inbox/messages HTTP/1.1" 200 - 5 0.002 0.002
+2025-09-11 05:30:00,990 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:00] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.000 0.002
+2025-09-11 05:30:02,033 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:02] "POST /web/action/load HTTP/1.1" 200 - 11 0.003 0.005
+2025-09-11 05:30:02,539 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:02] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 122 0.022 0.141
+2025-09-11 05:30:02,645 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:02] "POST /web/dataset/call_kw/account.move/web_search_read HTTP/1.1" 200 - 12 0.006 0.016
+2025-09-11 05:30:02,722 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:02] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.005
+2025-09-11 05:30:02,860 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:02] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.003
+2025-09-11 05:30:03,459 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:03] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 50 0.023 0.016
+2025-09-11 05:30:03,884 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:03] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.010 0.013
+2025-09-11 05:30:03,889 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:03] "POST /mail/thread/data HTTP/1.1" 200 - 33 0.012 0.020
+2025-09-11 05:30:04,491 3648 INFO odoo_db odoo.addons.account.models.account_move: preview invoice---- 
+2025-09-11 05:30:04,493 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:04] "POST /web/dataset/call_button/account.move/preview_invoice HTTP/1.1" 200 - 2 0.001 0.002
+2025-09-11 05:30:05,043 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:05] "GET /my/invoices/113?access_token=892805df-1187-49e9-a38b-56c1bc7d6415 HTTP/1.1" 200 - 136 0.031 0.205
+2025-09-11 05:30:05,074 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:05] "GET /logo.png?company=3 HTTP/1.1" 304 - 2 0.000 0.005
+2025-09-11 05:30:05,511 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: dgii_codigo_seguridad: C/31/B 
+2025-09-11 05:30:05,512 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Emisor : 132641566 
+2025-09-11 05:30:05,512 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Emisor : DOCUMENTOS ELECTRONICOS DE 02 
+2025-09-11 05:30:05,512 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Comprador : 131880681 
+2025-09-11 05:30:05,512 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Comprador : DOCUMENTOS ELECTRONICOS DE 03 
+2025-09-11 05:30:05,512 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code e-NCF : 02-04-2020 
+2025-09-11 05:30:05,512 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Total de ITIBS : 0.0 
+2025-09-11 05:30:05,512 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Monto Total : 400000.0 
+2025-09-11 05:30:05,606 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:05] "GET /my/invoices/113?access_token=892805df-1187-49e9-a38b-56c1bc7d6415&report_type=html HTTP/1.1" 200 - 59 0.014 0.132
+2025-09-11 05:30:05,802 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:05] "GET /web/bundle/portal.assets_chatter?lang=en_US&debug=1 HTTP/1.1" 200 - 8 0.004 0.051
+2025-09-11 05:30:06,162 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:06] "POST /portal/chatter_init HTTP/1.1" 200 - 16 0.005 0.008
+2025-09-11 05:30:06,193 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:06] "GET /web/bundle/portal.assets_chatter_style?lang=en_US&debug=1 HTTP/1.1" 200 - 9 0.005 0.039
+2025-09-11 05:30:06,402 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:06] "POST /mail/thread/data HTTP/1.1" 200 - 3 0.000 0.005
+2025-09-11 05:30:06,517 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:30:06] "POST /mail/chatter_fetch HTTP/1.1" 200 - 7 0.004 0.004
+2025-09-11 05:31:23,145 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-09-11 05:31:23,166 3648 INFO odoo_db odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-09-11 05:31:23,203 3648 INFO odoo_db odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-09-11 05:31:23,207 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-09-11 05:31:23,209 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:31:23,210 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:31:23,215 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-09-11 05:31:23,308 3648 INFO odoo_db odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-09-11 05:31:23,349 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.204s 
+2025-09-11 05:31:23,350 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-09-11 05:31:23,353 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-09-11 05:32:09,875 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:09] "POST /web/action/load HTTP/1.1" 200 - 12 0.005 0.008
+2025-09-11 05:32:09,883 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:09] "POST /mail/data HTTP/1.1" 200 - 23 0.008 0.011
+2025-09-11 05:32:09,921 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:09] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.007
+2025-09-11 05:32:09,934 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:09] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 3 0.002 0.021
+2025-09-11 05:32:09,935 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:09] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.019 0.005
+2025-09-11 05:32:10,161 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:10] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 36 0.011 0.023
+2025-09-11 05:32:10,195 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:10] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 3 0.001 0.003
+2025-09-11 05:32:10,322 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:10] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.012 0.023
+2025-09-11 05:32:10,635 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:10] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.000 0.005
+2025-09-11 05:32:10,649 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:10] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.006 0.014
+2025-09-11 05:32:12,052 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:12] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.002
+2025-09-11 05:32:13,257 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:13] "POST /web/action/load HTTP/1.1" 200 - 10 0.001 0.007
+2025-09-11 05:32:13,692 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:13] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 50 0.015 0.021
+2025-09-11 05:32:13,921 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:13] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.001
+2025-09-11 05:32:14,037 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:14] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 52 0.013 0.013
+2025-09-11 05:32:14,049 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:14] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.001 0.036
+2025-09-11 05:32:15,936 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:32:15,937 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:32:15,937 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:32:16,391 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user admin #2 via 127.0.0.1 
+2025-09-11 05:32:16,414 3648 INFO odoo_db odoo.modules.loading: loading 1 modules... 
+2025-09-11 05:32:16,417 3648 INFO odoo_db odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-09-11 05:32:16,428 3648 INFO odoo_db odoo.modules.loading: updating modules list 
+2025-09-11 05:32:16,429 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2025-09-11 05:32:16,945 3648 INFO odoo_db odoo.modules.loading: loading 51 modules... 
+2025-09-11 05:32:16,969 3648 INFO odoo_db odoo.modules.loading: Loading module dgii_invoicing (51/51) 
+2025-09-11 05:32:17,092 3648 INFO odoo_db odoo.modules.registry: module dgii_invoicing: creating or updating database tables 
+2025-09-11 05:32:17,187 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/security/ir.model.access.csv 
+2025-09-11 05:32:17,193 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/account_move_views.xml 
+2025-09-11 05:32:17,221 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/settings_views.xml 
+2025-09-11 05:32:17,229 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ir_sequence_data.xml 
+2025-09-11 05:32:17,234 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ncf_sequence.xml 
+2025-09-11 05:32:17,237 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_invoice_document.xml 
+2025-09-11 05:32:17,260 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_credit_note_document.xml 
+2025-09-11 05:32:17,274 3648 INFO odoo_db odoo.addons.base.models.ir_module: module dgii_invoicing: loading translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:32:17,274 3648 INFO odoo_db odoo.tools.translate: loading base translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:32:17,321 3648 INFO odoo_db odoo.modules.loading: Module dgii_invoicing loaded in 0.35s, 299 queries (+299 other) 
+2025-09-11 05:32:17,321 3648 INFO odoo_db odoo.modules.loading: 51 modules loaded in 0.38s, 299 queries (+299 extra) 
+2025-09-11 05:32:17,789 3648 INFO odoo_db odoo.modules.loading: Modules loaded. 
+2025-09-11 05:32:17,792 3648 INFO odoo_db odoo.modules.registry: Registry changed, signaling through the database 
+2025-09-11 05:32:17,792 3648 INFO odoo_db odoo.modules.registry: Registry loaded in 1.381s 
+2025-09-11 05:32:17,792 3648 INFO odoo_db odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2025-09-11 05:32:17,794 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:17] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 4641 0.898 0.963
+2025-09-11 05:32:18,118 3648 INFO odoo_db odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-09-11 05:32:18,594 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:18] "GET /odoo HTTP/1.1" 200 - 101 0.021 0.458
+2025-09-11 05:32:18,771 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:18] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.003 0.006
+2025-09-11 05:32:19,116 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:19] "POST /web/action/load HTTP/1.1" 200 - 7 0.001 0.006
+2025-09-11 05:32:19,132 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:19] "POST /mail/data HTTP/1.1" 200 - 34 0.010 0.012
+2025-09-11 05:32:19,177 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:19] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.012 0.008
+2025-09-11 05:32:19,180 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:19] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.012 0.011
+2025-09-11 05:32:19,181 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:19] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.000 0.023
+2025-09-11 05:32:19,415 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:19] "POST /mail/data HTTP/1.1" 200 - 62 0.015 0.026
+2025-09-11 05:32:19,491 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:19] "POST /mail/inbox/messages HTTP/1.1" 200 - 5 0.001 0.006
+2025-09-11 05:32:21,081 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:21] "POST /web/action/load HTTP/1.1" 200 - 11 0.000 0.008
+2025-09-11 05:32:21,419 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:21] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.010
+2025-09-11 05:32:21,584 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:21] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 122 0.030 0.146
+2025-09-11 05:32:21,673 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:21] "POST /web/dataset/call_kw/account.move/web_search_read HTTP/1.1" 200 - 12 0.004 0.012
+2025-09-11 05:32:21,909 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:21] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.002
+2025-09-11 05:32:22,971 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:22] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 50 0.018 0.021
+2025-09-11 05:32:23,381 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:23] "POST /mail/thread/data HTTP/1.1" 200 - 33 0.013 0.011
+2025-09-11 05:32:23,390 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:23] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.004 0.017
+2025-09-11 05:32:25,507 3648 INFO odoo_db odoo.addons.account.models.account_move: preview invoice---- 
+2025-09-11 05:32:25,508 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:25] "POST /web/dataset/call_button/account.move/preview_invoice HTTP/1.1" 200 - 2 0.002 0.002
+2025-09-11 05:32:26,107 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:26] "GET /my/invoices/113?access_token=892805df-1187-49e9-a38b-56c1bc7d6415 HTTP/1.1" 200 - 136 0.034 0.239
+2025-09-11 05:32:26,140 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:26] "GET /logo.png?company=3 HTTP/1.1" 304 - 2 0.000 0.005
+2025-09-11 05:32:26,584 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: dgii_codigo_seguridad: C/31/B 
+2025-09-11 05:32:26,584 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Emisor : 132641566 
+2025-09-11 05:32:26,584 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Emisor : DOCUMENTOS ELECTRONICOS DE 02 
+2025-09-11 05:32:26,584 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Comprador : 131880681 
+2025-09-11 05:32:26,584 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Comprador : DOCUMENTOS ELECTRONICOS DE 03 
+2025-09-11 05:32:26,584 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code e-NCF : 02-04-2020 
+2025-09-11 05:32:26,584 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Total de ITIBS : 0.0 
+2025-09-11 05:32:26,584 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Monto Total : 400000.0 
+2025-09-11 05:32:26,677 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:26] "GET /my/invoices/113?access_token=892805df-1187-49e9-a38b-56c1bc7d6415&report_type=html HTTP/1.1" 200 - 59 0.012 0.127
+2025-09-11 05:32:26,870 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:26] "GET /web/bundle/portal.assets_chatter?lang=en_US&debug=1 HTTP/1.1" 200 - 8 0.002 0.048
+2025-09-11 05:32:27,217 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:27] "POST /portal/chatter_init HTTP/1.1" 200 - 16 0.006 0.005
+2025-09-11 05:32:27,245 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:27] "GET /web/bundle/portal.assets_chatter_style?lang=en_US&debug=1 HTTP/1.1" 200 - 9 0.004 0.035
+2025-09-11 05:32:27,475 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:27] "POST /mail/thread/data HTTP/1.1" 200 - 3 0.000 0.005
+2025-09-11 05:32:27,571 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:32:27] "POST /mail/chatter_fetch HTTP/1.1" 200 - 7 0.003 0.006
+2025-09-11 05:33:25,432 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-09-11 05:33:25,456 3648 INFO odoo_db odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-09-11 05:33:25,503 3648 INFO odoo_db odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-09-11 05:33:25,508 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-09-11 05:33:25,512 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:33:25,513 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:33:25,522 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-09-11 05:33:25,654 3648 INFO odoo_db odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-09-11 05:33:25,710 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.278s 
+2025-09-11 05:33:25,711 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-09-11 05:33:25,713 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-09-11 05:33:25,719 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2025-09-11 05:33:25,721 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.002s 
+2025-09-11 05:33:25,722 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2025-09-11 05:33:25,724 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2025-09-11 05:33:25,728 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2025-09-11 05:33:25,743 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.016s 
+2025-09-11 05:33:25,744 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2025-09-11 05:33:25,746 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2025-09-11 05:33:55,115 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2025-09-11 05:33:55,118 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.003s 
+2025-09-11 05:33:55,120 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2025-09-11 05:33:55,124 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2025-09-11 05:33:55,126 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2025-09-11 05:33:55,147 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.020s 
+2025-09-11 05:33:55,148 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2025-09-11 05:33:55,150 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2025-09-11 05:33:55,155 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2025-09-11 05:33:55,156 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.001s 
+2025-09-11 05:33:55,157 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2025-09-11 05:33:55,158 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2025-09-11 05:34:00,358 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:00] "POST /web/action/load HTTP/1.1" 200 - 12 0.004 0.008
+2025-09-11 05:34:00,378 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:00] "POST /mail/data HTTP/1.1" 200 - 23 0.010 0.009
+2025-09-11 05:34:00,409 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:00] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.008 0.007
+2025-09-11 05:34:00,411 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:00] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.005 0.010
+2025-09-11 05:34:00,425 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:00] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 3 0.001 0.031
+2025-09-11 05:34:00,646 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:00] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 36 0.017 0.018
+2025-09-11 05:34:00,677 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:00] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 3 0.001 0.003
+2025-09-11 05:34:00,784 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:00] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.013 0.024
+2025-09-11 05:34:01,098 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:01] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.000 0.005
+2025-09-11 05:34:01,111 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:01] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.002 0.017
+2025-09-11 05:34:02,410 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:02] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2025-09-11 05:34:02,678 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:02] "POST /web/action/load HTTP/1.1" 200 - 10 0.002 0.004
+2025-09-11 05:34:03,000 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:03] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 50 0.013 0.018
+2025-09-11 05:34:03,009 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:03] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.004
+2025-09-11 05:34:03,341 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:03] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 52 0.018 0.010
+2025-09-11 05:34:03,350 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:03] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.002 0.033
+2025-09-11 05:34:06,342 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:34:06,342 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:34:06,342 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:34:06,885 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user admin #2 via 127.0.0.1 
+2025-09-11 05:34:06,959 3648 INFO odoo_db odoo.modules.loading: loading 1 modules... 
+2025-09-11 05:34:06,962 3648 INFO odoo_db odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-09-11 05:34:06,974 3648 INFO odoo_db odoo.modules.loading: updating modules list 
+2025-09-11 05:34:06,974 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2025-09-11 05:34:07,435 3648 INFO odoo_db odoo.modules.loading: loading 51 modules... 
+2025-09-11 05:34:07,458 3648 INFO odoo_db odoo.modules.loading: Loading module dgii_invoicing (51/51) 
+2025-09-11 05:34:07,573 3648 INFO odoo_db odoo.modules.registry: module dgii_invoicing: creating or updating database tables 
+2025-09-11 05:34:07,656 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/security/ir.model.access.csv 
+2025-09-11 05:34:07,662 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/account_move_views.xml 
+2025-09-11 05:34:07,691 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/settings_views.xml 
+2025-09-11 05:34:07,698 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ir_sequence_data.xml 
+2025-09-11 05:34:07,703 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ncf_sequence.xml 
+2025-09-11 05:34:07,705 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_invoice_document.xml 
+2025-09-11 05:34:07,729 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_credit_note_document.xml 
+2025-09-11 05:34:07,745 3648 INFO odoo_db odoo.addons.base.models.ir_module: module dgii_invoicing: loading translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:34:07,745 3648 INFO odoo_db odoo.tools.translate: loading base translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:34:07,794 3648 INFO odoo_db odoo.modules.loading: Module dgii_invoicing loaded in 0.34s, 299 queries (+299 other) 
+2025-09-11 05:34:07,794 3648 INFO odoo_db odoo.modules.loading: 51 modules loaded in 0.36s, 299 queries (+299 extra) 
+2025-09-11 05:34:08,360 3648 INFO odoo_db odoo.modules.loading: Modules loaded. 
+2025-09-11 05:34:08,496 3648 INFO odoo_db odoo.modules.registry: Registry changed, signaling through the database 
+2025-09-11 05:34:08,499 3648 INFO odoo_db odoo.modules.registry: Registry loaded in 1.545s 
+2025-09-11 05:34:08,500 3648 INFO odoo_db odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2025-09-11 05:34:08,504 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:08] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 4641 0.966 1.199
+2025-09-11 05:34:08,518 3648 INFO odoo_db odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-09-11 05:34:09,036 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:09] "GET /odoo HTTP/1.1" 200 - 101 0.014 0.506
+2025-09-11 05:34:09,528 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:09] "POST /web/action/load HTTP/1.1" 200 - 7 0.003 0.008
+2025-09-11 05:34:09,594 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:09] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.004 0.009
+2025-09-11 05:34:09,612 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:09] "POST /mail/data HTTP/1.1" 200 - 34 0.019 0.014
+2025-09-11 05:34:09,632 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:09] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.003 0.016
+2025-09-11 05:34:09,669 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:09] "POST /mail/data HTTP/1.1" 200 - 62 0.023 0.034
+2025-09-11 05:34:09,793 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:09] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.000 0.009
+2025-09-11 05:34:10,221 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:10] "POST /mail/inbox/messages HTTP/1.1" 200 - 5 0.001 0.007
+2025-09-11 05:34:10,541 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:10] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.005
+2025-09-11 05:34:11,584 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:11] "POST /web/action/load HTTP/1.1" 200 - 11 0.005 0.002
+2025-09-11 05:34:11,955 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:11] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.002
+2025-09-11 05:34:12,006 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:12] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 122 0.023 0.143
+2025-09-11 05:34:12,107 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:12] "POST /web/dataset/call_kw/account.move/web_search_read HTTP/1.1" 200 - 12 0.006 0.012
+2025-09-11 05:34:12,329 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:12] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.006
+2025-09-11 05:34:14,788 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:14] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 50 0.022 0.018
+2025-09-11 05:34:15,201 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:15] "POST /mail/thread/data HTTP/1.1" 200 - 33 0.007 0.014
+2025-09-11 05:34:15,223 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:15] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.006 0.016
+2025-09-11 05:34:16,443 3648 INFO odoo_db odoo.addons.account.models.account_move: preview invoice---- 
+2025-09-11 05:34:16,487 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:16] "POST /web/dataset/call_button/account.move/preview_invoice HTTP/1.1" 200 - 2 0.001 0.045
+2025-09-11 05:34:17,078 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:17] "GET /my/invoices/113?access_token=892805df-1187-49e9-a38b-56c1bc7d6415 HTTP/1.1" 200 - 136 0.027 0.245
+2025-09-11 05:34:17,155 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:17] "GET /logo.png?company=3 HTTP/1.1" 304 - 2 0.001 0.050
+2025-09-11 05:34:17,540 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: dgii_codigo_seguridad: C/31/B 
+2025-09-11 05:34:17,540 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Emisor : 132641566 
+2025-09-11 05:34:17,540 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Emisor : DOCUMENTOS ELECTRONICOS DE 02 
+2025-09-11 05:34:17,540 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Comprador : 131880681 
+2025-09-11 05:34:17,540 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Comprador : DOCUMENTOS ELECTRONICOS DE 03 
+2025-09-11 05:34:17,540 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code e-NCF : 02-04-2020 
+2025-09-11 05:34:17,540 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Total de ITIBS : 0.0 
+2025-09-11 05:34:17,540 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Monto Total : 400000.0 
+2025-09-11 05:34:17,629 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:17] "GET /my/invoices/113?access_token=892805df-1187-49e9-a38b-56c1bc7d6415&report_type=html HTTP/1.1" 200 - 59 0.016 0.120
+2025-09-11 05:34:17,831 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:17] "GET /web/bundle/portal.assets_chatter?lang=en_US&debug=1 HTTP/1.1" 200 - 8 0.001 0.064
+2025-09-11 05:34:18,186 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:18] "POST /portal/chatter_init HTTP/1.1" 200 - 16 0.006 0.011
+2025-09-11 05:34:18,220 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:18] "GET /web/bundle/portal.assets_chatter_style?lang=en_US&debug=1 HTTP/1.1" 200 - 9 0.004 0.048
+2025-09-11 05:34:18,442 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:18] "POST /mail/thread/data HTTP/1.1" 200 - 3 0.002 0.005
+2025-09-11 05:34:18,554 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:34:18] "POST /mail/chatter_fetch HTTP/1.1" 200 - 7 0.004 0.009
+2025-09-11 05:35:27,799 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-09-11 05:35:27,819 3648 INFO odoo_db odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-09-11 05:35:27,856 3648 INFO odoo_db odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-09-11 05:35:27,859 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-09-11 05:35:27,861 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:35:27,862 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:35:27,868 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-09-11 05:35:27,961 3648 INFO odoo_db odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-09-11 05:35:28,001 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.201s 
+2025-09-11 05:35:28,003 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-09-11 05:35:28,004 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-09-11 05:36:32,444 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:32] "POST /web/action/load HTTP/1.1" 200 - 12 0.006 0.007
+2025-09-11 05:36:32,452 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:32] "POST /mail/data HTTP/1.1" 200 - 23 0.007 0.012
+2025-09-11 05:36:32,473 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:32] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.008 0.003
+2025-09-11 05:36:32,483 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:32] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.003 0.017
+2025-09-11 05:36:32,484 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:32] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 3 0.001 0.022
+2025-09-11 05:36:32,714 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:32] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 36 0.011 0.020
+2025-09-11 05:36:32,763 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:32] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 3 0.001 0.003
+2025-09-11 05:36:32,832 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:32] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.013 0.013
+2025-09-11 05:36:33,152 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:33] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.003
+2025-09-11 05:36:33,165 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:33] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.009 0.009
+2025-09-11 05:36:34,564 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:34] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.008
+2025-09-11 05:36:34,641 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:34] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 50 0.012 0.014
+2025-09-11 05:36:34,826 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:34] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.005
+2025-09-11 05:36:34,905 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:34] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 53 0.011 0.013
+2025-09-11 05:36:34,961 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:34] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.004
+2025-09-11 05:36:34,974 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:34] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.001 0.018
+2025-09-11 05:36:36,777 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:36:36,777 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:36:36,778 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:36:37,245 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user admin #2 via 127.0.0.1 
+2025-09-11 05:36:37,268 3648 INFO odoo_db odoo.modules.loading: loading 1 modules... 
+2025-09-11 05:36:37,272 3648 INFO odoo_db odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-09-11 05:36:37,284 3648 INFO odoo_db odoo.modules.loading: updating modules list 
+2025-09-11 05:36:37,284 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2025-09-11 05:36:37,718 3648 INFO odoo_db odoo.modules.loading: loading 51 modules... 
+2025-09-11 05:36:37,738 3648 INFO odoo_db odoo.modules.loading: Loading module dgii_invoicing (51/51) 
+2025-09-11 05:36:37,859 3648 INFO odoo_db odoo.modules.registry: module dgii_invoicing: creating or updating database tables 
+2025-09-11 05:36:38,029 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/security/ir.model.access.csv 
+2025-09-11 05:36:38,035 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/account_move_views.xml 
+2025-09-11 05:36:38,072 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/settings_views.xml 
+2025-09-11 05:36:38,079 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ir_sequence_data.xml 
+2025-09-11 05:36:38,084 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ncf_sequence.xml 
+2025-09-11 05:36:38,087 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_invoice_document.xml 
+2025-09-11 05:36:38,109 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_credit_note_document.xml 
+2025-09-11 05:36:38,125 3648 INFO odoo_db odoo.addons.base.models.ir_module: module dgii_invoicing: loading translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:36:38,125 3648 INFO odoo_db odoo.tools.translate: loading base translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:36:38,137 3648 INFO odoo_db odoo.modules.loading: Module dgii_invoicing loaded in 0.40s, 299 queries (+299 other) 
+2025-09-11 05:36:38,137 3648 INFO odoo_db odoo.modules.loading: 51 modules loaded in 0.42s, 299 queries (+299 extra) 
+2025-09-11 05:36:38,608 3648 INFO odoo_db odoo.modules.loading: Modules loaded. 
+2025-09-11 05:36:38,610 3648 INFO odoo_db odoo.modules.registry: Registry changed, signaling through the database 
+2025-09-11 05:36:38,610 3648 INFO odoo_db odoo.modules.registry: Registry loaded in 1.346s 
+2025-09-11 05:36:38,610 3648 INFO odoo_db odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2025-09-11 05:36:38,613 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:38] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 4641 0.891 0.949
+2025-09-11 05:36:38,929 3648 INFO odoo_db odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-09-11 05:36:39,358 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:39] "GET /odoo HTTP/1.1" 200 - 101 0.024 0.410
+2025-09-11 05:36:39,547 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:39] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.001 0.020
+2025-09-11 05:36:39,891 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:39] "POST /web/action/load HTTP/1.1" 200 - 7 0.005 0.009
+2025-09-11 05:36:39,903 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:39] "POST /mail/data HTTP/1.1" 200 - 34 0.007 0.018
+2025-09-11 05:36:39,933 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:39] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.009
+2025-09-11 05:36:39,934 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:39] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.007 0.005
+2025-09-11 05:36:39,937 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:39] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.007 0.007
+2025-09-11 05:36:40,180 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:40] "POST /mail/data HTTP/1.1" 200 - 62 0.011 0.027
+2025-09-11 05:36:40,242 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:40] "POST /mail/inbox/messages HTTP/1.1" 200 - 5 0.002 0.004
+2025-09-11 05:36:41,426 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:41] "POST /web/action/load HTTP/1.1" 200 - 11 0.003 0.005
+2025-09-11 05:36:41,919 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:41] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 122 0.033 0.135
+2025-09-11 05:36:42,031 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:42] "POST /web/dataset/call_kw/account.move/web_search_read HTTP/1.1" 200 - 12 0.006 0.009
+2025-09-11 05:36:42,210 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:42] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.004
+2025-09-11 05:36:42,238 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:42] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.005
+2025-09-11 05:36:43,235 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:43] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 50 0.017 0.031
+2025-09-11 05:36:43,649 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:43] "POST /mail/thread/data HTTP/1.1" 200 - 33 0.013 0.014
+2025-09-11 05:36:43,660 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:43] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.006 0.015
+2025-09-11 05:36:44,490 3648 INFO odoo_db odoo.addons.account.models.account_move: preview invoice---- 
+2025-09-11 05:36:44,492 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:44] "POST /web/dataset/call_button/account.move/preview_invoice HTTP/1.1" 200 - 2 0.001 0.003
+2025-09-11 05:36:45,043 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:45] "GET /my/invoices/113?access_token=892805df-1187-49e9-a38b-56c1bc7d6415 HTTP/1.1" 200 - 136 0.013 0.224
+2025-09-11 05:36:45,072 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:45] "GET /logo.png?company=3 HTTP/1.1" 304 - 2 0.002 0.002
+2025-09-11 05:36:45,506 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: dgii_codigo_seguridad: C/31/B 
+2025-09-11 05:36:45,506 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Emisor : 132641566 
+2025-09-11 05:36:45,506 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Emisor : DOCUMENTOS ELECTRONICOS DE 02 
+2025-09-11 05:36:45,506 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Comprador : 131880681 
+2025-09-11 05:36:45,506 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Comprador : DOCUMENTOS ELECTRONICOS DE 03 
+2025-09-11 05:36:45,506 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code e-NCF : 02-04-2020 
+2025-09-11 05:36:45,506 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Total de ITIBS : 0.0 
+2025-09-11 05:36:45,506 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Monto Total : 400000.0 
+2025-09-11 05:36:45,591 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:45] "GET /my/invoices/113?access_token=892805df-1187-49e9-a38b-56c1bc7d6415&report_type=html HTTP/1.1" 200 - 59 0.011 0.118
+2025-09-11 05:36:45,819 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:45] "GET /web/bundle/portal.assets_chatter?lang=en_US&debug=1 HTTP/1.1" 200 - 8 0.002 0.055
+2025-09-11 05:36:46,163 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:46] "POST /portal/chatter_init HTTP/1.1" 200 - 16 0.004 0.008
+2025-09-11 05:36:46,195 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:46] "GET /web/bundle/portal.assets_chatter_style?lang=en_US&debug=1 HTTP/1.1" 200 - 9 0.005 0.041
+2025-09-11 05:36:46,427 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:46] "POST /mail/thread/data HTTP/1.1" 200 - 3 0.003 0.006
+2025-09-11 05:36:46,546 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:36:46] "POST /mail/chatter_fetch HTTP/1.1" 200 - 7 0.001 0.005
+2025-09-11 05:37:31,182 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:31] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.004 0.004
+2025-09-11 05:37:31,493 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:31] "POST /web/action/load HTTP/1.1" 200 - 12 0.003 0.006
+2025-09-11 05:37:31,547 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:31] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.011 0.003
+2025-09-11 05:37:31,560 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:31] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 3 0.004 0.024
+2025-09-11 05:37:31,563 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:31] "POST /mail/data HTTP/1.1" 200 - 23 0.017 0.014
+2025-09-11 05:37:31,851 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:31] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 36 0.014 0.024
+2025-09-11 05:37:31,881 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:31] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 3 0.000 0.003
+2025-09-11 05:37:32,273 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:32] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.011 0.008
+2025-09-11 05:37:32,291 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:32] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.005 0.014
+2025-09-11 05:37:32,295 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:32] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.000 0.007
+2025-09-11 05:37:33,073 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:33] "POST /web/action/load HTTP/1.1" 200 - 10 0.002 0.007
+2025-09-11 05:37:33,426 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:33] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 50 0.020 0.012
+2025-09-11 05:37:33,583 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:33] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.003
+2025-09-11 05:37:33,685 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:33] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 53 0.008 0.020
+2025-09-11 05:37:33,742 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:33] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.005
+2025-09-11 05:37:33,760 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:33] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.021
+2025-09-11 05:37:35,464 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:37:35,464 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:37:35,464 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['DGII Electronic Invoicing (Dominican Republic)'] to user admin #2 via 127.0.0.1 
+2025-09-11 05:37:35,918 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user admin #2 via 127.0.0.1 
+2025-09-11 05:37:35,948 3648 INFO odoo_db odoo.modules.loading: loading 1 modules... 
+2025-09-11 05:37:35,952 3648 INFO odoo_db odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-09-11 05:37:35,964 3648 INFO odoo_db odoo.modules.loading: updating modules list 
+2025-09-11 05:37:35,965 3648 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2025-09-11 05:37:36,429 3648 INFO odoo_db odoo.modules.loading: loading 51 modules... 
+2025-09-11 05:37:36,449 3648 INFO odoo_db odoo.modules.loading: Loading module dgii_invoicing (51/51) 
+2025-09-11 05:37:36,642 3648 INFO odoo_db odoo.modules.registry: module dgii_invoicing: creating or updating database tables 
+2025-09-11 05:37:36,728 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/security/ir.model.access.csv 
+2025-09-11 05:37:36,735 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/account_move_views.xml 
+2025-09-11 05:37:36,766 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/settings_views.xml 
+2025-09-11 05:37:36,775 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ir_sequence_data.xml 
+2025-09-11 05:37:36,780 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ncf_sequence.xml 
+2025-09-11 05:37:36,782 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_invoice_document.xml 
+2025-09-11 05:37:36,809 3648 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_credit_note_document.xml 
+2025-09-11 05:37:36,825 3648 INFO odoo_db odoo.addons.base.models.ir_module: module dgii_invoicing: loading translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:37:36,825 3648 INFO odoo_db odoo.tools.translate: loading base translation file d:\project\odoo_dev\odoo\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-11 05:37:36,840 3648 INFO odoo_db odoo.modules.loading: Module dgii_invoicing loaded in 0.39s, 299 queries (+299 other) 
+2025-09-11 05:37:36,840 3648 INFO odoo_db odoo.modules.loading: 51 modules loaded in 0.41s, 299 queries (+299 extra) 
+2025-09-11 05:37:37,333 3648 INFO odoo_db odoo.modules.loading: Modules loaded. 
+2025-09-11 05:37:37,348 3648 INFO odoo_db odoo.modules.registry: Registry changed, signaling through the database 
+2025-09-11 05:37:37,348 3648 INFO odoo_db odoo.modules.registry: Registry loaded in 1.404s 
+2025-09-11 05:37:37,348 3648 INFO odoo_db odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2025-09-11 05:37:37,350 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:37] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 4641 0.926 0.964
+2025-09-11 05:37:37,677 3648 INFO odoo_db odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-09-11 05:37:38,080 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:38] "GET /odoo HTTP/1.1" 200 - 101 0.016 0.390
+2025-09-11 05:37:38,261 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:38] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.001 0.009
+2025-09-11 05:37:38,611 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:38] "POST /web/action/load HTTP/1.1" 200 - 7 0.008 0.009
+2025-09-11 05:37:38,617 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:38] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.007 0.012
+2025-09-11 05:37:38,618 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:38] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.007 0.012
+2025-09-11 05:37:38,646 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:38] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.000 0.005
+2025-09-11 05:37:38,716 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:38] "POST /mail/data HTTP/1.1" 200 - 34 0.093 0.027
+2025-09-11 05:37:38,896 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:38] "POST /mail/data HTTP/1.1" 200 - 62 0.014 0.025
+2025-09-11 05:37:38,973 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:38] "POST /mail/inbox/messages HTTP/1.1" 200 - 5 0.002 0.005
+2025-09-11 05:37:39,977 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:39] "POST /web/action/load HTTP/1.1" 200 - 11 0.001 0.009
+2025-09-11 05:37:40,460 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:40] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 122 0.024 0.133
+2025-09-11 05:37:40,589 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:40] "POST /web/dataset/call_kw/account.move/web_search_read HTTP/1.1" 200 - 12 0.005 0.014
+2025-09-11 05:37:40,781 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:40] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.007
+2025-09-11 05:37:40,784 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:40] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.008
+2025-09-11 05:37:42,122 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:42] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 50 0.021 0.019
+2025-09-11 05:37:42,544 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:42] "POST /mail/thread/data HTTP/1.1" 200 - 33 0.008 0.017
+2025-09-11 05:37:42,557 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:42] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.010 0.013
+2025-09-11 05:37:43,531 3648 INFO odoo_db odoo.addons.account.models.account_move: preview invoice---- 
+2025-09-11 05:37:43,533 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:43] "POST /web/dataset/call_button/account.move/preview_invoice HTTP/1.1" 200 - 2 0.000 0.004
+2025-09-11 05:37:44,094 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:44] "GET /my/invoices/113?access_token=892805df-1187-49e9-a38b-56c1bc7d6415 HTTP/1.1" 200 - 136 0.024 0.225
+2025-09-11 05:37:44,125 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:44] "GET /logo.png?company=3 HTTP/1.1" 304 - 2 0.001 0.004
+2025-09-11 05:37:44,569 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: dgii_codigo_seguridad: C/31/B 
+2025-09-11 05:37:44,569 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Emisor : 132641566 
+2025-09-11 05:37:44,569 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Emisor : DOCUMENTOS ELECTRONICOS DE 02 
+2025-09-11 05:37:44,569 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Comprador : 131880681 
+2025-09-11 05:37:44,569 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Comprador : DOCUMENTOS ELECTRONICOS DE 03 
+2025-09-11 05:37:44,569 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code e-NCF : 02-04-2020 
+2025-09-11 05:37:44,569 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Total de ITIBS : 0.0 
+2025-09-11 05:37:44,569 3648 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Monto Total : 400000.0 
+2025-09-11 05:37:44,658 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:44] "GET /my/invoices/113?access_token=892805df-1187-49e9-a38b-56c1bc7d6415&report_type=html HTTP/1.1" 200 - 59 0.019 0.122
+2025-09-11 05:37:44,879 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:44] "GET /web/bundle/portal.assets_chatter?lang=en_US&debug=1 HTTP/1.1" 200 - 8 0.002 0.054
+2025-09-11 05:37:45,230 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:45] "POST /portal/chatter_init HTTP/1.1" 200 - 16 0.005 0.008
+2025-09-11 05:37:45,262 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:45] "GET /web/bundle/portal.assets_chatter_style?lang=en_US&debug=1 HTTP/1.1" 200 - 9 0.002 0.044
+2025-09-11 05:37:45,493 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:45] "POST /mail/thread/data HTTP/1.1" 200 - 3 0.003 0.006
+2025-09-11 05:37:45,586 3648 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 05:37:45] "POST /mail/chatter_fetch HTTP/1.1" 200 - 7 0.003 0.006
+2025-09-11 05:37:55,230 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-09-11 05:37:55,255 3648 INFO odoo_db odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-09-11 05:37:55,293 3648 INFO odoo_db odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-09-11 05:37:55,298 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-09-11 05:37:55,300 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:37:55,300 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:37:55,306 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-09-11 05:37:55,403 3648 INFO odoo_db odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-09-11 05:37:55,444 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.214s 
+2025-09-11 05:37:55,447 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-09-11 05:37:55,450 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-09-11 05:38:55,468 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-09-11 05:38:55,492 3648 INFO odoo_db odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-09-11 05:38:55,531 3648 INFO odoo_db odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-09-11 05:38:55,534 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-09-11 05:38:55,537 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:38:55,538 3648 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-11 05:38:55,546 3648 INFO odoo_db odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-09-11 05:38:55,664 3648 INFO odoo_db odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-09-11 05:38:55,708 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.240s 
+2025-09-11 05:38:55,709 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-09-11 05:38:55,712 3648 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
