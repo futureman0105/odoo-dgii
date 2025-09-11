@@ -1,21 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <!-- Sequence for Factura de Crédito Fiscal (31) -->
-  <record id="seq_ncf_credito_fiscal" model="ir.sequence">
-    <field name="name">NCF Factura Crédito Fiscal</field>
-    <field name="code">ncf.31</field>
-    <field name="prefix">B31</field>
-    <field name="padding">8</field>
-    <field name="number_next">1</field>
-    <field name="implementation">no_gap</field>
-  </record>
+    <!-- e-NCF Sequence for Factura de Crédito Fiscal (31) -->
+    <record id="seq_e_ncf_31" model="ir.sequence">
+        <field name="name">e-NCF 31</field>
+        <field name="code">e.ncf.31</field>
+        <field name="prefix">E31</field>
+        <field name="padding">9</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
 
-  <!-- Sequence for Nota de Crédito (34) -->
-  <record id="seq_ncf_credit_note" model="ir.sequence">
-    <field name="name">NCF Nota de Crédito</field>
-    <field name="code">ncf.34</field>
-    <field name="prefix">B34</field>
-    <field name="padding">8</field>
-    <field name="number_next">1</field>
-    <field name="implementation">no_gap</field>
-  </record>
+    <!-- e-NCF Sequence for Factura de Consumo (32) -->
+    <record id="seq_e_ncf_32" model="ir.sequence">
+        <field name="name">e-NCF 32</field>
+        <field name="code">e.ncf.32</field>
+        <field name="prefix">E32</field>
+        <field name="padding">9</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <!-- e-NCF Sequence for Nota de Débito (33) -->
+    <record id="seq_e_ncf_33" model="ir.sequence">
+        <field name="name">e-NCF 33</field>
+        <field name="code">e.ncf.33</field>
+        <field name="prefix">E33</field>
+        <field name="padding">9</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <!-- e-NCF Sequence for  Nota de Crédito (34) -->
+    <record id="seq_e_ncf_34" model="ir.sequence">
+        <field name="name">e-NCF 34</field>
+        <field name="code">e.ncf.34</field>
+        <field name="prefix">E34</field>
+        <field name="padding">9</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <!-- e-NCF Sequence for  Comprobante de Compras (41) -->
+    <record id="seq_e_ncf_41" model="ir.sequence">
+        <field name="name">e-NCF 41</field>
+        <field name="code">e.ncf.41</field>
+        <field name="prefix">E41</field>
+        <field name="padding">9</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <!-- e-NCF Sequence for Gastos Menores (43) -->
+    <record id="seq_e_ncf_43" model="ir.sequence">
+        <field name="name">e-NCF 43</field>
+        <field name="code">e.ncf.43</field>
+        <field name="prefix">E43</field>
+        <field name="padding">9</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <!-- e-NCF Sequence for Regímenes Especiales (44) -->
+    <record id="seq_e_ncf_44" model="ir.sequence">
+        <field name="name">e-NCF 44</field>
+        <field name="code">e.ncf.44</field>
+        <field name="prefix">E44</field>
+        <field name="padding">9</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <!-- e-NCF Sequence for Comprobante Gubernamental (45) -->
+    <record id="seq_e_ncf_45" model="ir.sequence">
+        <field name="name">e-NCF 45</field>
+        <field name="code">e.ncf.45</field>
+        <field name="prefix">E45</field>
+        <field name="padding">9</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <!-- e-NCF Sequence for Comprobante de Exportación (46) -->
+    <record id="seq_e_ncf_46" model="ir.sequence">
+        <field name="name">e-NCF 46</field>
+        <field name="code">e.ncf.46</field>
+        <field name="prefix">E46</field>
+        <field name="padding">9</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <!-- e-NCF Sequence for Pagos en el Exterior (47) -->
+    <record id="seq_e_ncf_47" model="ir.sequence">
+        <field name="name">e-NCF 47</field>
+        <field name="code">e.ncf.47</field>
+        <field name="prefix">E47</field>
+        <field name="padding">9</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
 </odoo>
