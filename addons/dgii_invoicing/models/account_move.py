@@ -100,7 +100,8 @@ class AccountMove(models.Model):
                 _logger.info(f'e-NCF : {move.e_ncf_number}')
 
                 code = str(cf_code)
-                move.name = doc_type_names.get(code, '/')
+                temp = doc_type_names.get(code, '/')
+                move.name = f'{temp}({move.e_ncf_number})'
             else:
                 move.name = '/'
 

@@ -49,8 +49,8 @@
                         </div>
                     </div>
                     <div id="right-elements01" class="d-flex flex-column align-items-end">
-                        <div style ="font-size: 20px; font-weight: bold; color :rgb(12, 120, 192);"> <span t-esc="o.name"/></div>
-                        <div> e-NCF: <span t-esc="o.e_ncf_number"/></div>
+                        <div style ="font-size: 20px; font-weight: bold; color :rgb(12, 120, 192);"> <span t-esc="o.l10n_latam_document_type_id.name"/><span> Electrónica</span></div>
+                        <div> e-NCF: <span t-esc="o.dgii_ncf"/></div>
                         <div class="d-flex flex-column align-items-end" t-if="o.l10n_latam_document_type_id.code == '33' or o.l10n_latam_document_type_id.code == '34'"> 
                             <div> NCF Modificado : E320000000006</div>
                             <div> Corrige montos del NCF modificado</div>
