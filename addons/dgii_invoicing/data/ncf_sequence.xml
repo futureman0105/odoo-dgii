@@ -1,0 +1,21 @@
+<odoo>
+  <!-- Sequence for Factura de Crédito Fiscal (31) -->
+  <record id="seq_ncf_credito_fiscal" model="ir.sequence">
+    <field name="name">NCF Factura Crédito Fiscal</field>
+    <field name="code">ncf.31</field>
+    <field name="prefix">B31</field>
+    <field name="padding">8</field>
+    <field name="number_next">1</field>
+    <field name="implementation">no_gap</field>
+  </record>
+
+  <!-- Sequence for Nota de Crédito (34) -->
+  <record id="seq_ncf_credit_note" model="ir.sequence">
+    <field name="name">NCF Nota de Crédito</field>
+    <field name="code">ncf.34</field>
+    <field name="prefix">B34</field>
+    <field name="padding">8</field>
+    <field name="number_next">1</field>
+    <field name="implementation">no_gap</field>
+  </record>
+</odoo>

@@ -1,0 +1,21 @@
+<odoo>
+    <!-- Sequence for ANECF (e-CF Sequence Cancellation) -->
+    <record id="seq_dgii_anecf" model="ir.sequence">
+        <field name="name">DGII e-CF Cancellation Sequence</field>
+        <field name="code">dgii.anecf</field>
+        <field name="prefix">ANECF/</field>
+        <field name="padding">5</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <!-- Sequence for RFCE (Consumer Summary Report) -->
+    <record id="seq_dgii_rfce" model="ir.sequence">
+        <field name="name">DGII RFCE Summary Sequence</field>
+        <field name="code">dgii.rfce</field>
+        <field name="prefix">RFCE/</field>
+        <field name="padding">5</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+</odoo>

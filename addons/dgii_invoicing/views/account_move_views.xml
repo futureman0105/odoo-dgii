@@ -1,0 +1,45 @@
+<odoo>
+  <data>
+    <!-- Inherit the invoice form and add DGII button + statusbar -->
+    <record id="view_move_form_dgii" model="ir.ui.view">
+      <field name="name">account.move.form.dgii</field>
+      <field name="model">account.move</field>
+      <field name="inherit_id" ref="account.view_move_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//header" position="inside">
+          <!-- Button with visibility control -->
+          <button name="action_send_to_dgii"
+                  string="Send to DGII"
+                  type="object"
+                  class="btn-primary"
+                  invisible="dgii_submission_status in ['sent', 'accepted']"/>
+
+          <!-- Statusbar to show submission state -->
+          <group string="DGII e-Invoice">
+            <field name="dgii_submission_status"
+                  widget="statusbar"
+                  statusbar_visible="not_sent,sent,accepted,rejected,error"/>
+          </group>
+        </xpath>
+        <xpath expr="//field[@name='invoice_date']" position="after">
+          <field name="l10n_latam_document_type_id"/>
+        </xpath>
+      </field>
+    </record>
+
+    <!-- Add custom filters in invoice list/search view -->
+    <record id="view_account_move_filter_dgii" model="ir.ui.view">
+      <field name="name">account.move.search.dgii</field>
+      <field name="model">account.move</field>
+      <field name="inherit_id" ref="account.view_account_move_filter"/>
+      <field name="arch" type="xml">
+        <!-- Correct XPath for standard Odoo 18 filters -->
+        <xpath expr="//filter[@name='posted']" position="after">
+          <filter name="filter_dgii_not_sent" string="DGII Not Sent" domain="[('dgii_submission_status','=','not_sent')]"/>
+          <filter name="filter_dgii_accepted" string="DGII Accepted" domain="[('dgii_submission_status','=','accepted')]"/>
+          <filter name="filter_dgii_error" string="DGII Error" domain="[('dgii_submission_status','=','error')]"/>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

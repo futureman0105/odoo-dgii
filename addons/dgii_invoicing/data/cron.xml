@@ -1,0 +1,12 @@
+<odoo>
+    <record id="ir_cron_dgii_status_checker" model="ir.cron">
+        <field name="name">DGII Invoice Status Checker</field>
+        <field name="model_id" ref="account.model_account_move"/>
+        <field name="state">code</field>
+        <field name="code">model.action_check_dgii_status()</field>
+        <field name="interval_number">10</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+        <field name="active">True</field>
+    </record>
+</odoo>

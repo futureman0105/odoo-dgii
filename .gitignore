@@ -51,3 +51,4 @@ package.json
 /share/
 /src/
 odoo-env
+/logfile.log

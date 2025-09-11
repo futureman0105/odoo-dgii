@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="https://ecf.dgii.gov.do/esquemas/ecf/1.1">
+  <Encabezado>
+    <Version>1.1</Version>
+    <IdDoc>
+      <TipoeCF>32</TipoeCF>
+      <eNCF>E320000000000</eNCF>
+      <IndicadorMontoGravado>1</IndicadorMontoGravado>
+      <FechaLimitePago>2020-04-01</FechaLimitePago>
+      <TerminoPago>Contado</TerminoPago>
+    </IdDoc>
+    <Emisor>
+      <RNCEmisor/>
+      <RazonSocialEmisor>YourCompany</RazonSocialEmisor>
+      <NombreComercial>YourCompany</NombreComercial>
+      <DireccionEmisor>250 Executive Park Blvd, Suite 3400</DireccionEmisor>
+      <Municipio>San Francisco</Municipio>
+      <Provincia>California</Provincia>
+      <TablaTelefonoEmisor>
+        <TelefonoEmisor>
+          <NumeroTelefono>15555555556</NumeroTelefono>
+          <TipoTelefono>1</TipoTelefono>
+        </TelefonoEmisor>
+      </TablaTelefonoEmisor>
+      <CorreoEmisor>info@yourcompany.com</CorreoEmisor>
+      <WebSite>http://www.example.com</WebSite>
+      <ActividadEconomica>VENTA AL POR MENOR</ActividadEconomica>
+      <CodigoVendedor>admin</CodigoVendedor>
+      <NumeroFacturaInterna>INV/2025/00010</NumeroFacturaInterna>
+      <NumeroPedidoInterno/>
+      <ZonaVenta>N/A</ZonaVenta>
+      <RutaVenta>N/A</RutaVenta>
+      <InformacionAdicionalEmisor>
+        <InformacionAdicional nombre="Sucursal" texto="San Francisco"/>
+      </InformacionAdicionalEmisor>
+      <FechaEmision>31-12-2025</FechaEmision>
+    </Emisor>
+    <Comprador>
+      <RNCComprador>131880681</RNCComprador>
+      <RazonSocialComprador>MARCOS LATIPLOL</RazonSocialComprador>
+      <DireccionComprador>CALLE JACINTO DE LA CONCHA FELIZ ESQUINA 27 DE FEBRERO</DireccionComprador>
+    </Comprador>
+    <InformacionesAdicionales>
+      <InformacionAdicional nombre="Observaciones" texto="Factura generada desde Odoo"/>
+    </InformacionesAdicionales>
+    <Transporte/>
+    <Totales>
+      <MontoTotal>7080.00</MontoTotal>
+      <ValorPagar>7080.00</ValorPagar>
+      <TotalITBISRetenido>0.00</TotalITBISRetenido>
+      <TotalISRRetencion>0.00</TotalISRRetencion>
+      <TotalITBISPercepcion>0.00</TotalITBISPercepcion>
+    </Totales>
+  </Encabezado>
+  <Detalles/>
+  <Totales>
+    <MontoTotal>7080.00</MontoTotal>
+    <ITBISTotal>1080.00</ITBISTotal>
+  </Totales>
+</ECF>
