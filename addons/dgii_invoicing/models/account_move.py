@@ -1,5 +1,5 @@
 import requests
-from odoo import models, fields
+from odoo import models, fields, api
 import base64
 from lxml import etree
 from .digital_signature import DGII_XMLSigner
@@ -60,6 +60,51 @@ class AccountMove(models.Model):
     dgii_ncf = "E430000000001"
     dgii_codigo_seguridad = "dkjuik"
     qr_code = fields.Binary("QR Code", compute="_compute_qr_code")
+
+    e_ncf_number = fields.Char(
+        string="e-NCF",
+        readonly=True,
+        copy=False
+    )
+                
+    def action_post(self):
+        _logger = logging.getLogger(__name__)
+
+        doc_type_names = {
+            '31': 'Factura de Crédito Fiscal Electrónica',
+            '32': 'Factura de Consumo Electrónica',
+            '33': 'Nota de Débito Electrónica',
+            '34': 'Nota de Crédito Electrónica',
+            '41': 'Comprobante de Compras Electrónica',
+            '43': 'Gastos Menores Electrónica',
+            '44': 'Regímenes Especiales Electrónica',
+            '45': 'Comprobante Gubernamental Electrónica',
+            '46': 'Comprobante de Exportación Electrónica',
+            '47': 'Pagos en el Exterior Electrónica',
+        }
+
+        for move in self:
+            # Require document type before confirming
+            if not move.l10n_latam_document_type_id:
+                raise UserError("You must select a Document Type before confirming this invoice.")
+        
+        res = super().action_post()
+
+        for move in self:
+            if move.l10n_latam_document_type_id:
+                cf_code = move.l10n_latam_document_type_id.code
+                _logger.info(f'CF Code: {cf_code}')
+                seq_code = f"e.ncf.{cf_code}"
+                seq = self.env['ir.sequence'].search([('code', '=', f'{seq_code}')])
+                move.e_ncf_number = seq.next_by_id()
+                _logger.info(f'e-NCF : {move.e_ncf_number}')
+
+                code = str(cf_code)
+                move.name = doc_type_names.get(code, '/')
+            else:
+                move.name = '/'
+
+        return res
 
     def _compute_qr_code(self):
         for move in self:

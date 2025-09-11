@@ -21,8 +21,10 @@
                   statusbar_visible="not_sent,sent,accepted,rejected,error"/>
           </group>
         </xpath>
+
+        <!-- 🔹 Document Type Field readonly after posting-->
         <xpath expr="//field[@name='invoice_date']" position="after">
-          <field name="l10n_latam_document_type_id"/>
+          <field name="l10n_latam_document_type_id" readonly="state != 'draft'"/>
         </xpath>
       </field>
     </record>
