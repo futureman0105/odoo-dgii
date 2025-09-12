@@ -10,10 +10,10 @@
         'security/ir.model.access.csv',
         'views/account_move_views.xml',
         'views/settings_views.xml',
-        'data/ir_sequence_data.xml',
-        "data/ncf_sequence.xml",        # NCF sequences
         'views/report_invoice_document.xml',
         'views/report_credit_note_document.xml',
+        'data/ir_sequence_data.xml',
+        "data/ncf_sequence.xml",        # NCF sequences
         # 'data/cron.xml',
     ],
     'installable': True,

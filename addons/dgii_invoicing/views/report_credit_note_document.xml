@@ -27,12 +27,12 @@
                             </div>
                             <div id="right-elements01" class="d-flex flex-column align-items-end">
                                 <div style ="font-size: 20px; font-weight: bold; color :rgb(12, 120, 192);">Nota de Crédito Electrónica </div>
-                                <div> e-NCF: <span t-esc="o.e_ncf_number"/></div>
+                                <div> e-NCF: <span t-esc="o.dgii_ncf"/></div>
                                 <t t-if="o.move_type in ('out_refund','in_refund') or o.credit_note">
                                     <t t-set="orig" t-value="o.reversed_entry_id or o.reversal_move_id or (o.invoice_origin and env['account.move'].search([('name','=',o.invoice_origin)], limit=1)) or False"/>
                                     <t t-if="orig">
                                         <div class="d-flex align-items-end">
-                                                <strong>NCF Modificado :</strong> <span t-esc="orig.e_ncf_number"/>
+                                                <strong>NCF Modificado :</strong> <span t-esc="orig.dgii_ncf"/>
                                         </div>
                                     </t>
                                     <!-- fallback: maybe invoice_origin contains original number/reference -->

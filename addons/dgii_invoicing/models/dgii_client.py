@@ -11,7 +11,7 @@ import json
 from OpenSSL import crypto
 
 class DGIICFService:
-    def __init__(self, dgii_env='prod', company_id=None, env=None):
+    def __init__(self, dgii_env='cert', company_id=None, env=None):
         """
         Initialize the DGII service with environment, company, and config data.
         """
@@ -20,10 +20,11 @@ class DGIICFService:
         if not company_id:
             raise ValueError("Company ID is required")
         
-        
+        # "http://localhost:8080/api/sign" 
+        self.sign_url = "http://148.230.114.180:8080/sign-xml-0.0.1-SNAPSHOT/api/sign"
         self.base_url = {
             'test': 'https://ecf.dgii.gov.do/testeCF',
-            'prod': 'https://ecf.dgii.gov.do/CerteCF'
+            'cert': 'https://ecf.dgii.gov.do/CerteCF'
         }[dgii_env]
         
         self.env = env
@@ -143,18 +144,15 @@ class DGIICFService:
         """
         Sign the XML for 'semilla' using the private key and certificate.
         """
-        
-        url = "http://localhost:8080/api/sign"
-        headers = {
-            "Content-Type": "application/xml",
-        }
+
+        headers = { "Content-Type": "application/xml",}
 
         if type == 'semilla':
             xml_str = semilla.decode('utf-8').strip()
         else:
             xml_str = semilla
             
-        res = requests.post(url, data=xml_str, headers=headers)
+        res = requests.post(self.sign_url, data=xml_str, headers=headers)
 
         if type == 'semilla':
             path = os.path.join(os.path.dirname(__file__), '..', 'data/signed.xml')

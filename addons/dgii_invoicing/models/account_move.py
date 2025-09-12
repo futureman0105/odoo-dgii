@@ -28,11 +28,11 @@ class AccountMove(models.Model):
     dgii_response_log = fields.Text('DGII Response Log')
     dgii_response_code = fields.Char('DGII Response Code')
     dgii_response_message = fields.Text('DGII Response Message')
-    dgii_ncf = fields.Char(string="DGII NCF")
     dgii_codigo_seguridad = fields.Char(string="DGII Codigo Seguridad")
     dgii_qr_data = fields.Char(string="DGII QR Data")
     dgii_token = fields.Char("DGII Token")
     dgii_track_id = fields.Char("DGII Track ID")
+    dgii_ncf = fields.Char(string="e-NCF", readonly=True, copy=False)
     dgii_status = fields.Selection([
         ('draft', 'Draft'),
         ('en_proceso', 'En Proceso'),
@@ -56,20 +56,16 @@ class AccountMove(models.Model):
     ], string='NCF Type', default='31', required=True,
        help='Select the type of NCF for this invoice')
     
-    l10n_do_fiscal_number = fields.Char("NCF (DGII)", readonly=True, copy=False)
-    dgii_ncf = "E430000000001"
-    dgii_codigo_seguridad = "dkjuik"
     qr_code = fields.Binary("QR Code", compute="_compute_qr_code")
 
-    e_ncf_number = fields.Char(
-        string="e-NCF",
-        readonly=True,
-        copy=False
-    )
-                
-    def action_post(self):
-        _logger = logging.getLogger(__name__)
+    test_ncf = fields.Char(string="test-e-NCF")
+    test_ncf = "E410000000013" 
+    dgii_codigo_seguridad = "rk7z0i"
 
+    # test_ncf = "E450000000009" 
+    # dgii_codigo_seguridad = "HNf/6X"
+    
+    def action_post(self):
         doc_type_names = {
             '31': 'Factura de Crédito Fiscal Electrónica',
             '32': 'Factura de Consumo Electrónica',
@@ -87,25 +83,75 @@ class AccountMove(models.Model):
             # Require document type before confirming
             if not move.l10n_latam_document_type_id:
                 raise UserError("You must select a Document Type before confirming this invoice.")
-        
-        res = super().action_post()
 
         for move in self:
             if move.l10n_latam_document_type_id:
-                cf_code = move.l10n_latam_document_type_id.code
-                _logger.info(f'CF Code: {cf_code}')
-                seq_code = f"e.ncf.{cf_code}"
-                seq = self.env['ir.sequence'].search([('code', '=', f'{seq_code}')])
-                move.e_ncf_number = seq.next_by_id()
-                _logger.info(f'e-NCF : {move.e_ncf_number}')
-
-                code = str(cf_code)
-                temp = doc_type_names.get(code, '/')
-                move.name = f'{temp}({move.e_ncf_number})'
+                e_ncf = self.get_next_ncf()
+                cf_code = str(move.l10n_latam_document_type_id.code)
+                temp = doc_type_names.get(cf_code, '/')
+                move.name = f'{temp}({e_ncf})'
             else:
                 move.name = '/'
 
+        res = super().action_post()
+
         return res
+
+    def get_next_ncf(self) : 
+        _logger = logging.getLogger(__name__)
+
+        print("Getting Next NCF...")
+        
+        cf_code = self.l10n_latam_document_type_id.code
+        _logger.info(f'CF Code: {cf_code}')
+        seq_code = f"e.ncf.{cf_code}"
+        seq = self.env['ir.sequence'].search([('code', '=', f'{seq_code}')], limit=1)
+
+        key = f'e_ncf_{cf_code}_last_number'
+        
+        param = self.env['ir.config_parameter'].sudo()
+        last_number = int(param.get_param(key, 0))
+        seq.number_next = last_number + 1
+
+        param.set_param(key, str(seq.number_next))
+
+        ##############################################################
+        ####    force-save the parameter before continuing:    #######
+        ##############################################################
+
+        self.env.cr.commit() 
+
+        ##############################################################
+        ##############################################################
+        ##############################################################
+
+        next_ncf_number = seq.next_by_id()
+        _logger.info(f'next e-NCF : {next_ncf_number}')
+
+        self.dgii_ncf = next_ncf_number
+
+        return self.dgii_ncf
+
+    def get_ncf(self) : 
+        _logger = logging.getLogger(__name__)
+
+        _logger.info("Getting NCF...")
+        
+        cf_code = self.l10n_latam_document_type_id.code
+        _logger.info(f'CF Code: {cf_code}')
+        seq_code = f"e.ncf.{cf_code}"
+        seq = self.env['ir.sequence'].search([('code', '=', f'{seq_code}')])
+        
+        key = f'e_ncf_{cf_code}_last_number'
+        
+        last_number = int(self.env['ir.config_parameter'].sudo().get_param(key, 0))
+        seq.number_next = last_number
+
+        ncf_number = seq.next_by_id()
+
+        self.dgii_ncf = ncf_number
+
+        return self.dgii_ncf
 
     def _compute_qr_code(self):
         for move in self:
@@ -116,7 +162,7 @@ class AccountMove(models.Model):
                 "Razón Social Emisor": move.company_id.name,
                 "RNC Comprador": move.partner_id.vat or "",
                 "Razón Social Comprador": move.partner_id.name or "",
-                "e-NCF": move.dgii_ncf,
+                "e-NCF": move.test_ncf,
                 "Fecha de Emisión": str(invoice_date),
                 "Total de ITIBS": str(move.amount_tax),
                 # "Total de ITIBS": "16,016.95",
@@ -136,32 +182,19 @@ class AccountMove(models.Model):
             _logger.info(f'QR code Total de ITIBS : {move.amount_tax}')
             _logger.info(f'QR code Monto Total : {move.amount_total}')
 
-
             qr_data = json.dumps(qr_dict, ensure_ascii=False)
             qr_img = qrcode.make(qr_data)
 
             buffer = io.BytesIO()
             qr_img.save(buffer, format="PNG")
-            qr_code_b64 = base64.b64encode(buffer.getvalue())
-            move.qr_code = qr_code_b64
+            move.qr_code = base64.b64encode(buffer.getvalue())
 
     def action_send_to_dgii(self):
         _logger = logging.getLogger(__name__)
         for invoice in self:
             if invoice.move_type != 'out_invoice':
                 raise UserError("Only customer invoices can be submitted to DGII.")
-            
-            tipo_ecf = invoice.l10n_latam_document_type_id.code
-            sequence_code = f"ncf.{tipo_ecf}"
 
-            _logger.info(f'sequence_code: {sequence_code}')
-            ncf = self.env["ir.sequence"].next_by_code(sequence_code)
-            _logger.info(f'ncf is: {ncf}')
-
-            if not invoice.l10n_do_fiscal_number:
-                ncf = self.env["ir.sequence"].next_by_code(sequence_code)
-                invoice.l10n_do_fiscal_number = ncf
-            
             # Ensure that the invoice has a valid company
             if not invoice.company_id:
                 raise ValueError("Invoice is not linked to a company.")
@@ -170,72 +203,75 @@ class AccountMove(models.Model):
             company_id = invoice.company_id.id
             _logger.info(f"Processing invoice with company ID: {invoice.company_id.id}")
 
-            try:
-                dgii_service = DGIICFService(dgii_env='test', company_id=company_id, env=self.env)
+            e_ncf = self.get_ncf()
+            _logger.info(f"ENCF: {e_ncf}")
 
-                # Step 1: Get the seed
-                semilla = dgii_service.get_semilla()
-                if not semilla:
-                    raise UserError("Failed to retrieve semilla from DGII.")
+            # try:
+            #     dgii_service = DGIICFService(dgii_env='test', company_id=company_id, env=self.env)
+
+            #     # Step 1: Get the seed
+            #     semilla = dgii_service.get_semilla()
+            #     if not semilla:
+            #         raise UserError("Failed to retrieve semilla from DGII.")
                 
-                _logger.info(f"Received semilla: {semilla}")
+            #     _logger.info(f"Received semilla: {semilla}")
 
-                # Step 2: Sign the semilla
-                signed_semilla = dgii_service.sign_semilla(semilla)
+            #     # Step 2: Sign the semilla
+            #     signed_semilla = dgii_service.sign_semilla(semilla)
 
-                _logger.info(f"Signed semilla: {signed_semilla}")
+            #     _logger.info(f"Signed semilla: {signed_semilla}")
 
-                # Step 3: Validate the signed semilla and get the token
-                token = dgii_service.validate_semilla(signed_semilla)
-                if not token:
-                    raise UserError("Failed to validate semilla with DGII and obtain token.")
+            #     # Step 3: Validate the signed semilla and get the token
+            #     token = dgii_service.validate_semilla(signed_semilla)
+            #     if not token:
+            #         raise UserError("Failed to validate semilla with DGII and obtain token.")
                 
-                _logger.info(f"Received token: {token}")
+            #     _logger.info(f"Received token: {token}")
 
-                # Step 4: Generate and sign e-CF XML
-                xml_str = invoice._generate_ecf_xml()
-                _logger.info(f"invoice xml: {xml_str}")
+            #     # Step 4: Generate and sign e-CF XML
+            #     xml_str = invoice._generate_ecf_xml()
+            #     _logger.info(f"invoice xml: {xml_str}")
 
-                signed_xml = dgii_service.sign_xml(xml_str)
-                _logger.info(f"signed invoice xml: {signed_xml}")
+            #     signed_xml = dgii_service.sign_xml(xml_str)
+            #     _logger.info(f"signed invoice xml: {signed_xml}")
 
-                dgii_codigo_seguridad = invoice.get_code_signature(signed_xml)
-                _logger.info(f"Codigo Sseguridad: {dgii_codigo_seguridad}")
+            #     # dgii_codigo_seguridad = invoice.get_code_signature(signed_xml)
+            #     # _logger.info(f"Codigo Sseguridad: {dgii_codigo_seguridad}")
 
-                # Step 5: Submit the signed e-CF XML to DGII using the token
-                response = dgii_service.submit_ecf(signed_xml, token)
-                trackId = ""
-                # Log the response and update the invoice status
-                if response.status_code == 200:
-                    invoice.dgii_submission_status = 'sent'
+            #     # Step 5: Submit the signed e-CF XML to DGII using the token
+            #     response = dgii_service.submit_ecf(signed_xml, token)
+            #     trackId = ""
+            #     # Log the response and update the invoice status
+            #     if response.status_code == 200:
+            #         invoice.dgii_submission_status = 'sent'
                     
-                    response_data = json.loads(response.content.decode('utf-8'))
-                    # invoice.dgii_ncf = "E310000000000001"
-                    invoice.dgii_response_log = "Submitted to DGII, response: trackId: " + response_data['trackId']
-                    invoice.message_post(body="✅ e-CF sent to DGII. trackId: " + response_data['trackId'])
-                    _logger.info(f"Successfully sent invoice {invoice.name} to DGII")
-                    trackId = response_data['trackId']
-                else:
-                    invoice.dgii_submission_status = 'error'
-                    invoice.dgii_response_log = f"Error from DGII: {response.text}"
-                    invoice.message_post(body="❌ Error sending e-CF to DGII: " + response.text)
-                    _logger.error(f"Error submitting invoice {invoice.name} to DGII: {response.text}")
+            #         response_data = json.loads(response.content.decode('utf-8'))
+            #         # invoice.dgii_ncf = "E310000000000001"
+            #         invoice.dgii_response_log = "Submitted to DGII, response: trackId: " + response_data['trackId']
+            #         invoice.message_post(body="✅ e-CF sent to DGII. trackId: " + response_data['trackId'])
+            #         _logger.info(f"Successfully sent invoice {invoice.name} to DGII")
+            #         trackId = response_data['trackId']
+            #     else:
+            #         invoice.dgii_submission_status = 'error'
+            #         invoice.dgii_response_log = f"Error from DGII: {response.text}"
+            #         invoice.message_post(body="❌ Error sending e-CF to DGII: " + response.text)
+            #         _logger.error(f"Error submitting invoice {invoice.name} to DGII: {response.text}")
 
-                # Step 5: Track the status of e-CF to DGII using the token
-                response = dgii_service.track_ecf(trackId, token)
-                _logger.info(f"track result: {response.content}")
+            #     # Step 5: Track the status of e-CF to DGII using the token
+            #     response = dgii_service.track_ecf(trackId, token)
+            #     _logger.info(f"track result: {response.content}")
                 
-                response_data = json.loads(response.content.decode('utf-8'))
-                self.write({
-                    "dgii_track_id": trackId,
-                    "dgii_token": token,
-                })
+            #     response_data = json.loads(response.content.decode('utf-8'))
+            #     self.write({
+            #         "dgii_track_id": trackId,
+            #         "dgii_token": token,
+            #     })
 
-            except Exception as e:
-                _logger.exception(f"Failed to process invoice {invoice.name}: {str(e)}")
-                invoice.dgii_submission_status = 'error'
-                invoice.dgii_response_log = f"Error processing invoice: {str(e)}"
-                invoice.message_post(body="❌ Error processing invoice.")
+            # except Exception as e:
+            #     _logger.exception(f"Failed to process invoice {invoice.name}: {str(e)}")
+            #     invoice.dgii_submission_status = 'error'
+            #     invoice.dgii_response_log = f"Error processing invoice: {str(e)}"
+            #     invoice.message_post(body="❌ Error processing invoice.")
 
     def get_code_signature(self, xml_str) :
         _logger = logging.getLogger(__name__)
@@ -263,12 +299,14 @@ class AccountMove(models.Model):
 
         # 1. Encabezado
         encabezado = ET.SubElement(root, 'Encabezado')
-        ET.SubElement(encabezado, 'Version').text = '1.1'
+        ET.SubElement(encabezado, 'Version').text = '1.0'
+
+        e_ncf = self.get_ncf()
 
         # IdDoc
         id_doc = ET.SubElement(encabezado, 'IdDoc')
         ET.SubElement(id_doc, 'TipoeCF').text = self.l10n_latam_document_type_id.code or "32"
-        ET.SubElement(id_doc, 'eNCF').text = "E320000000000"  # must be filled from NCF sequence
+        ET.SubElement(id_doc, 'eNCF').text = e_ncf  # must be filled from NCF sequence
         ET.SubElement(id_doc, 'IndicadorMontoGravado').text = '1'
         if self.invoice_date_due:
             ET.SubElement(id_doc, 'FechaLimitePago').text = str(self.invoice_date_due)
@@ -383,7 +421,7 @@ class AccountMove(models.Model):
         
         id_doc = ET.SubElement(encabezado, 'IdDoc')
         ET.SubElement(id_doc, 'TipoeCF').text = "32"
-        ET.SubElement(id_doc, 'eNCF').text = self.l10n_do_fiscal_number
+        ET.SubElement(id_doc, 'eNCF').text = self.dgii_ncf
         ET.SubElement(id_doc, 'IndicadorMontoGravado').text = '1'  # 1=Yes, 0=No
         ET.SubElement(id_doc, 'FechaLimitePago').text = '2025-08-30'  # Optional
         ET.SubElement(id_doc, 'TerminoPago').text = 'Contado'  # "Contado" or "Crédito"

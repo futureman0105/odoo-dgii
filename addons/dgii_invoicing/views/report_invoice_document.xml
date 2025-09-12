@@ -51,8 +51,9 @@
                     <div id="right-elements01" class="d-flex flex-column align-items-end">
                         <div style ="font-size: 20px; font-weight: bold; color :rgb(12, 120, 192);"> <span t-esc="o.l10n_latam_document_type_id.name"/><span> Electrónica</span></div>
                         <div> e-NCF: <span t-esc="o.dgii_ncf"/></div>
+                        <!-- <div> e-NCF: <span t-esc="o.test_ncf"/></div> -->
                         <div class="d-flex flex-column align-items-end" t-if="o.l10n_latam_document_type_id.code == '33' or o.l10n_latam_document_type_id.code == '34'"> 
-                            <div> NCF Modificado : E320000000006</div>
+                            <div> NCF Modificado : E310000000007</div>
                             <div> Corrige montos del NCF modificado</div>
                         </div>
                         <div t-elif="o.l10n_latam_document_type_id.code != '32'"> Fecha Vendmlento: <span t-esc="o.invoice_date_due.strftime('%d-%m-%Y') if o.invoice_date_due else ''"/></div>
@@ -177,22 +178,22 @@
                                 <tr>
                                     <td style = "padding: 10px 20px;"><strong>Subtotal Gravado:</strong></td>
                                     <td class = "o_price_total text-end" style = "padding: 10px 20px;">
-                                        <span class="text-nowrap" t-field="o.amount_untaxed"/>
-                                        <!-- <span class="text-nowrap"> RD$ 88,983.05</span> -->
+                                        <!-- <span class="text-nowrap" t-field="o.amount_untaxed"/> -->
+                                        <span class="text-nowrap"> RD$ 14,886.25</span>
                                     </td>
                                 </tr>   
                                 <tr>
                                     <td  style = "padding: 10px 20px;"><strong>Total ITBIS:</strong></td>
                                     <td class = " o_price_total text-end" style = "padding: 10px 20px;">
-                                        <span class="text-nowrap" t-field="o.amount_tax"/>
-                                        <!-- <span class="text-nowrap"> RD$ 16,016.95</span> -->
+                                        <!-- <span class="text-nowrap" t-field="o.amount_tax"/> -->
+                                        <span class="text-nowrap"> RD$ 2, 679.53</span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td  style = "padding: 10px 20px;"><strong>Total:</strong></td>
                                     <td class = " o_price_total text-end"  style = "padding: 10px 20px;">
-                                        <span class="text-nowrap" t-field="o.amount_total"/>
-                                        <!-- <span class="text-nowrap"> RD$ 17,565.78</span> -->
+                                        <!-- <span class="text-nowrap" t-field="o.amount_total"/> -->
+                                        <span class="text-nowrap"> RD$ 17,565.78</span>
                                     </td>
                                 </tr>
                             </table>

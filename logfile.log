@@ -1,137 +1,106 @@
-2025-09-11 15:20:46,453 8204 INFO odoo_db odoo.addons.base.models.ir_http: Generating routing map for key None 
-2025-09-11 15:20:46,598 8204 WARNING odoo_db odoo.modules.module: Missing `license` key in manifest for 'dgii_invoicing', defaulting to LGPL-3 
-2025-09-11 15:20:47,105 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:47] "GET /odoo/customer-invoices/159?debug=assets%2Ctests HTTP/1.1" 200 - 103 0.044 0.639
-2025-09-11 15:20:47,151 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:47] "GET /web/assets/debug/web.assets_web.css HTTP/1.1" 304 - 3 0.001 0.025
-2025-09-11 15:20:47,710 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:47] "GET /web/assets/debug/web.assets_tests.js HTTP/1.1" 304 - 3 0.008 0.066
-2025-09-11 15:20:47,874 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:47] "GET /web/assets/debug/web.assets_web.js HTTP/1.1" 304 - 3 0.000 0.444
-2025-09-11 15:20:48,054 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:48] "GET /web/assets/debug/web.assets_web_print.css HTTP/1.1" 304 - 3 0.001 0.022
-2025-09-11 15:20:48,487 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:48] "POST /web/action/load HTTP/1.1" 200 - 13 0.012 0.004
-2025-09-11 15:20:48,936 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:48] "POST /mail/data HTTP/1.1" 200 - 35 0.145 0.114
-2025-09-11 15:20:48,936 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:48] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 123 0.086 0.172
-2025-09-11 15:20:48,945 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:48] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.008 0.244
-2025-09-11 15:20:48,966 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:48] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.015 0.221
-2025-09-11 15:20:48,972 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:48] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.027 0.234
-2025-09-11 15:20:49,074 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:49] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 53 0.075 0.028
-2025-09-11 15:20:49,298 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:49] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.000 0.005
-2025-09-11 15:20:49,555 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:49] "POST /mail/thread/data HTTP/1.1" 200 - 30 0.020 0.010
-2025-09-11 15:20:49,576 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:49] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.014 0.006
-2025-09-11 15:20:49,627 8204 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
-2025-09-11 15:20:50,785 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:50] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.015
-2025-09-11 15:20:53,747 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: CF Code: 32 
-2025-09-11 15:20:53,755 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: e-NCF : E32000000001 
-2025-09-11 15:20:53,779 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:53] "POST /web/dataset/call_button/account.move/action_post HTTP/1.1" 200 - 106 0.057 0.062
-2025-09-11 15:20:53,939 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:53] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.007 0.004
-2025-09-11 15:20:54,121 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:54] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 43 0.015 0.020
-2025-09-11 15:20:54,150 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:20:54] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.006 0.015
-2025-09-11 15:21:04,451 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:04] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 19 0.008 0.080
-2025-09-11 15:21:06,463 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:06] "POST /web/dataset/call_kw/l10n_latam.document.type/name_search HTTP/1.1" 200 - 2 0.001 0.003
-2025-09-11 15:21:07,681 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:07] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 8 0.003 0.006
-2025-09-11 15:21:09,354 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:09] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 11 0.004 0.009
-2025-09-11 15:21:10,552 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:10] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 6 0.003 0.005
-2025-09-11 15:21:11,483 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:11] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 29 0.014 0.015
-2025-09-11 15:21:13,838 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:13] "POST /web/dataset/call_kw/account.move.line/onchange HTTP/1.1" 200 - 11 0.009 0.038
-2025-09-11 15:21:14,055 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:14] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 10 0.003 0.010
-2025-09-11 15:21:14,390 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:14] "POST /web/dataset/call_kw/product.product/name_search HTTP/1.1" 200 - 14 0.004 0.009
-2025-09-11 15:21:16,044 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:16] "POST /web/dataset/call_kw/account.move.line/onchange HTTP/1.1" 200 - 24 0.012 0.014
-2025-09-11 15:21:16,279 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:16] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 12 0.008 0.005
-2025-09-11 15:21:18,847 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:18] "POST /web/dataset/call_kw/account.move/web_save HTTP/1.1" 200 - 92 0.044 0.076
-2025-09-11 15:21:19,192 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:19] "POST /mail/thread/data HTTP/1.1" 200 - 21 0.010 0.007
-2025-09-11 15:21:19,202 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:19] "POST /mail/thread/messages HTTP/1.1" 200 - 17 0.004 0.008
-2025-09-11 15:21:21,396 8204 WARNING odoo_db odoo.http: You must select a Document Type before confirming this invoice. 
-2025-09-11 15:21:21,396 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:21] "POST /web/dataset/call_button/account.move/action_post HTTP/1.1" 200 - 2 0.000 0.029
-2025-09-11 15:21:21,744 8204 INFO ? werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:21] "GET /web/static/lib/stacktracejs/stacktrace.js HTTP/1.1" 304 - 0 0.000 0.023
-2025-09-11 15:21:22,001 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:22] "GET /web/assets/debug/web.assets_web.js HTTP/1.1" 304 - 3 0.001 0.042
-2025-09-11 15:21:24,959 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:24] "POST /web/dataset/call_kw/l10n_latam.document.type/name_search HTTP/1.1" 200 - 2 0.000 0.004
-2025-09-11 15:21:26,262 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:26] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 32 0.014 0.013
-2025-09-11 15:21:28,265 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:28] "POST /web/dataset/call_kw/account.move/web_save HTTP/1.1" 200 - 41 0.015 0.038
-2025-09-11 15:21:28,589 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:28] "POST /mail/thread/messages HTTP/1.1" 200 - 3 0.002 0.002
-2025-09-11 15:21:28,624 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:28] "POST /mail/thread/data HTTP/1.1" 200 - 21 0.031 0.008
-2025-09-11 15:21:29,927 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: CF Code: 32 
-2025-09-11 15:21:29,934 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: e-NCF : E32000000002 
-2025-09-11 15:21:29,950 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:29] "POST /web/dataset/call_button/account.move/action_post HTTP/1.1" 200 - 75 0.032 0.039
-2025-09-11 15:21:30,294 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:30] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 38 0.015 0.020
-2025-09-11 15:21:30,300 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:30] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.031 0.011
-2025-09-11 15:21:30,541 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:30] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.001 0.015
-2025-09-11 15:21:34,826 8204 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
-2025-09-11 15:21:34,849 8204 INFO odoo_db odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
-2025-09-11 15:21:34,900 8204 INFO odoo_db odoo.addons.base.models.res_users: GC'd 0 user log entries 
-2025-09-11 15:21:34,906 8204 INFO odoo_db odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
-2025-09-11 15:21:34,912 8204 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
-2025-09-11 15:21:34,913 8204 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
-2025-09-11 15:21:34,925 8204 INFO odoo_db odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
-2025-09-11 15:21:35,041 8204 INFO odoo_db odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
-2025-09-11 15:21:35,097 8204 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.271s 
-2025-09-11 15:21:35,099 8204 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
-2025-09-11 15:21:35,101 8204 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
-2025-09-11 15:21:35,618 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:35] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 14 0.006 0.017
-2025-09-11 15:21:37,715 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:37] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 6 0.001 0.006
-2025-09-11 15:21:38,530 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:38] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 23 0.008 0.012
-2025-09-11 15:21:41,366 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:41] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 11 0.004 0.009
-2025-09-11 15:21:41,621 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:41] "POST /web/dataset/call_kw/l10n_latam.document.type/name_search HTTP/1.1" 200 - 2 0.001 0.003
-2025-09-11 15:21:42,817 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:42] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 8 0.003 0.008
-2025-09-11 15:21:45,247 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:45] "POST /web/dataset/call_kw/account.move.line/onchange HTTP/1.1" 200 - 9 0.001 0.011
-2025-09-11 15:21:45,512 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:45] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 9 0.005 0.007
-2025-09-11 15:21:45,821 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:45] "POST /web/dataset/call_kw/product.product/name_search HTTP/1.1" 200 - 9 0.005 0.006
-2025-09-11 15:21:47,271 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:47] "POST /web/dataset/call_kw/account.move.line/onchange HTTP/1.1" 200 - 20 0.007 0.010
-2025-09-11 15:21:47,531 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:47] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 11 0.001 0.012
-2025-09-11 15:21:49,228 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:49] "POST /web/dataset/call_kw/account.move/web_save HTTP/1.1" 200 - 77 0.037 0.058
-2025-09-11 15:21:49,566 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:49] "POST /mail/thread/data HTTP/1.1" 200 - 21 0.006 0.007
-2025-09-11 15:21:49,579 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:49] "POST /mail/thread/messages HTTP/1.1" 200 - 17 0.007 0.005
-2025-09-11 15:21:54,753 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: CF Code: 32 
-2025-09-11 15:21:54,759 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: e-NCF : E32000000003 
-2025-09-11 15:21:54,774 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:54] "POST /web/dataset/call_button/account.move/action_post HTTP/1.1" 200 - 75 0.027 0.035
-2025-09-11 15:21:55,108 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:55] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.006 0.011
-2025-09-11 15:21:55,174 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:55] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 37 0.061 0.020
-2025-09-11 15:21:55,357 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:21:55] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.006 0.012
-2025-09-11 15:22:00,539 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:00] "POST /web/dataset/call_button/account.move/action_reverse HTTP/1.1" 200 - 12 0.002 0.007
-2025-09-11 15:22:00,870 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:00] "POST /web/dataset/call_kw/account.move.reversal/get_views HTTP/1.1" 200 - 11 0.002 0.009
-2025-09-11 15:22:01,131 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:01] "POST /web/dataset/call_kw/account.move.reversal/onchange HTTP/1.1" 200 - 6 0.004 0.004
-2025-09-11 15:22:04,369 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:04] "POST /web/dataset/call_kw/account.move.reversal/web_save HTTP/1.1" 200 - 10 0.008 0.005
-2025-09-11 15:22:04,774 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:04] "POST /web/dataset/call_button/account.move.reversal/refund_moves HTTP/1.1" 200 - 66 0.019 0.068
-2025-09-11 15:22:04,956 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:04] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 7 0.004 0.015
-2025-09-11 15:22:05,120 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:05] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 33 0.010 0.015
-2025-09-11 15:22:05,284 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:05] "POST /mail/thread/data HTTP/1.1" 200 - 21 0.007 0.010
-2025-09-11 15:22:05,485 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:05] "POST /mail/thread/messages HTTP/1.1" 200 - 17 0.005 0.008
-2025-09-11 15:22:10,268 8204 WARNING odoo_db odoo.http: You must select a Document Type before confirming this invoice. 
-2025-09-11 15:22:10,268 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:10] "POST /web/dataset/call_button/account.move/action_post HTTP/1.1" 200 - 2 0.002 0.003
-2025-09-11 15:22:12,732 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:12] "POST /web/dataset/call_kw/l10n_latam.document.type/name_search HTTP/1.1" 200 - 2 0.001 0.006
-2025-09-11 15:22:13,781 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:13] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 32 0.012 0.018
-2025-09-11 15:22:15,716 8204 WARNING odoo_db odoo.http: You can not use a debit_note document type with a refund invoice 
-2025-09-11 15:22:15,716 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:15] "POST /web/dataset/call_kw/account.move/web_save HTTP/1.1" 200 - 12 0.002 0.065
-2025-09-11 15:22:18,222 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:18] "POST /web/dataset/call_kw/l10n_latam.document.type/name_search HTTP/1.1" 200 - 2 0.000 0.003
-2025-09-11 15:22:19,874 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:19] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 32 0.012 0.012
-2025-09-11 15:22:21,789 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:21] "POST /web/dataset/call_kw/account.move/web_save HTTP/1.1" 200 - 40 0.018 0.030
-2025-09-11 15:22:22,117 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:22] "POST /mail/thread/messages HTTP/1.1" 200 - 3 0.004 0.006
-2025-09-11 15:22:22,128 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:22] "POST /mail/thread/data HTTP/1.1" 200 - 21 0.008 0.013
-2025-09-11 15:22:22,277 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: CF Code: 34 
-2025-09-11 15:22:22,284 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: e-NCF : E34000000001 
-2025-09-11 15:22:22,315 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:22] "POST /web/dataset/call_button/account.move/action_post HTTP/1.1" 200 - 122 0.137 0.068
-2025-09-11 15:22:22,368 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:22] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.006 0.004
-2025-09-11 15:22:22,657 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:22] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 37 0.014 0.017
-2025-09-11 15:22:22,685 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:22] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.008 0.012
-2025-09-11 15:22:30,913 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:30] "POST /web/dataset/call_kw/ir.actions.report/get_valid_action_reports HTTP/1.1" 200 - 4 0.001 0.006
-2025-09-11 15:22:33,477 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:33] "POST /web/action/load HTTP/1.1" 200 - 8 0.005 0.004
-2025-09-11 15:22:33,799 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:33] "POST /report/check_wkhtmltopdf HTTP/1.1" 200 - 1 0.000 0.005
-2025-09-11 15:22:34,094 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Emisor : 132641566 
-2025-09-11 15:22:34,094 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Emisor : DOCUMENTOS ELECTRONICOS DE 02 
-2025-09-11 15:22:34,094 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code RNC Comprador : 131880681 
-2025-09-11 15:22:34,094 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Razón Social Comprador : DOCUMENTOS ELECTRONICOS DE 03 
-2025-09-11 15:22:34,094 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code e-NCF : 11-09-2025 
-2025-09-11 15:22:34,094 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Total de ITIBS : 0.0 
-2025-09-11 15:22:34,094 8204 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: QR code Monto Total : 140.0 
-2025-09-11 15:22:34,195 8204 INFO odoo_db odoo.addons.base.models.ir_actions_report: Generating PDF on Windows platform require DPI >= 96. Using 96 instead. 
-2025-09-11 15:22:36,538 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:36] "GET /web/assets/3420c8f/web.report_assets_pdf.min.css HTTP/1.1" 200 - 3 0.000 0.011
-2025-09-11 15:22:36,546 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:36] "GET /web/assets/92e9a10/web.report_assets_common.min.css HTTP/1.1" 200 - 3 0.002 0.017
-2025-09-11 15:22:36,587 8204 INFO ? werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:36] "GET /web/static/fonts/lato/Lato-Reg-webfont.woff HTTP/1.1" 200 - 0 0.000 0.007
-2025-09-11 15:22:38,710 8204 INFO ? werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:38] "GET /web/static/fonts/lato/Lato-Lig-webfont.woff HTTP/1.1" 200 - 0 0.000 0.013
-2025-09-11 15:22:38,710 8204 INFO ? werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:38] "GET /web/static/fonts/lato/Lato-Bol-webfont.woff HTTP/1.1" 200 - 0 0.000 0.012
-2025-09-11 15:22:38,710 8204 INFO ? werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:38] "GET /web/static/fonts/lato/Lato-Bla-webfont.woff HTTP/1.1" 200 - 0 0.000 0.011
-2025-09-11 15:22:38,710 8204 INFO ? werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:38] "GET /web/static/fonts/lato/Lato-Hai-webfont.woff HTTP/1.1" 200 - 0 0.000 0.013
-2025-09-11 15:22:41,491 8204 INFO odoo_db odoo.addons.base.models.ir_actions_report: The PDF report has been generated for model: account.move, records [162]. 
-2025-09-11 15:22:41,492 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:41] "POST /report/download HTTP/1.1" 200 - 61 0.019 7.428
-2025-09-11 15:22:41,503 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:41] "POST /mail/thread/messages HTTP/1.1" 200 - 3 0.002 0.003
-2025-09-11 15:22:41,833 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:41] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 37 0.009 0.017
-2025-09-11 15:22:42,167 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:42] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.005 0.012
-2025-09-11 15:22:54,137 8204 INFO odoo_db odoo.service.server: Initiating shutdown 
-2025-09-11 15:22:54,137 8204 INFO odoo_db odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
-2025-09-11 15:22:56,859 8204 INFO odoo_db werkzeug: 127.0.0.1 - - [11/Sep/2025 15:22:56] "GET /odoo/customer-invoices/161/38/account.move/162?debug=assets%2Ctests HTTP/1.1" 200 - 18 0.004 0.017
+2025-09-12 08:37:54,955 8496 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: CF Code: 32 
+2025-09-12 08:37:55,009 8496 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: next e-NCF : E32000000005 
+2025-09-12 08:37:55,107 8496 ERROR odoo_db odoo.sql_db: bad query: b' UPDATE "account_move"\n                    SET "checked" = "__tmp"."checked"::bool, "payment_reference" = "__tmp"."payment_reference"::VARCHAR, "posted_before" = "__tmp"."posted_before"::bool, "state" = "__tmp"."state"::VARCHAR, "write_date" = "__tmp"."write_date"::timestamp, "write_uid" = "__tmp"."write_uid"::int4\n                    FROM (VALUES (187, true, \'Factura de Consumo Electr\xc3\xb3nica(E32000000005)\', true, \'posted\', \'2025-09-12T08:37:55.006248\'::timestamp, 2)) AS "__tmp"("id", "checked", "payment_reference", "posted_before", "state", "write_date", "write_uid")\n                    WHERE "account_move"."id" = "__tmp"."id"\n                '
+ERROR: duplicate key value violates unique constraint "account_move_unique_name"
+DETAIL:  Key (name, journal_id)=(Factura de Consumo Electrónica(E32000000005), 8) already exists.
+ 
+2025-09-12 08:37:55,109 8496 WARNING odoo_db odoo.http: The operation cannot be completed: Another entry with the same name already exists. 
+2025-09-12 08:37:55,109 8496 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:37:55] "POST /web/dataset/call_button/account.move/action_post HTTP/1.1" 200 - 131 0.047 0.118
+2025-09-12 08:38:01,227 8496 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: CF Code: 32 
+2025-09-12 08:38:01,234 8496 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: next e-NCF : E32000000006 
+2025-09-12 08:38:01,305 8496 ERROR odoo_db odoo.sql_db: bad query: b' UPDATE "account_move"\n                    SET "checked" = "__tmp"."checked"::bool, "payment_reference" = "__tmp"."payment_reference"::VARCHAR, "posted_before" = "__tmp"."posted_before"::bool, "state" = "__tmp"."state"::VARCHAR, "write_date" = "__tmp"."write_date"::timestamp, "write_uid" = "__tmp"."write_uid"::int4\n                    FROM (VALUES (187, true, \'Factura de Consumo Electr\xc3\xb3nica(E32000000006)\', true, \'posted\', \'2025-09-12T08:38:01.232825\'::timestamp, 2)) AS "__tmp"("id", "checked", "payment_reference", "posted_before", "state", "write_date", "write_uid")\n                    WHERE "account_move"."id" = "__tmp"."id"\n                '
+ERROR: duplicate key value violates unique constraint "account_move_unique_name"
+DETAIL:  Key (name, journal_id)=(Factura de Consumo Electrónica(E32000000006), 8) already exists.
+ 
+2025-09-12 08:38:01,308 8496 WARNING odoo_db odoo.http: The operation cannot be completed: Another entry with the same name already exists. 
+2025-09-12 08:38:01,308 8496 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:38:01] "POST /web/dataset/call_button/account.move/action_post HTTP/1.1" 200 - 127 0.027 0.064
+2025-09-12 08:38:05,474 8496 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: CF Code: 32 
+2025-09-12 08:38:05,484 8496 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: next e-NCF : E32000000007 
+2025-09-12 08:38:05,582 8496 INFO odoo_db odoo.modules.registry: Caches invalidated, signaling through the database: ['default'] 
+2025-09-12 08:38:05,582 8496 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:38:05] "POST /web/dataset/call_button/account.move/action_post HTTP/1.1" 200 - 166 0.055 0.063
+2025-09-12 08:38:05,916 8496 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:38:05] "POST /mail/thread/messages HTTP/1.1" 200 - 28 0.013 0.011
+2025-09-12 08:38:05,986 8496 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:38:05] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 54 0.068 0.024
+2025-09-12 08:38:06,180 8496 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:38:06] "POST /mail/thread/data HTTP/1.1" 200 - 37 0.007 0.015
+2025-09-12 08:38:10,909 8496 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-09-12 08:38:10,935 8496 INFO odoo_db odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-09-12 08:38:10,941 8496 INFO odoo_db odoo.models.unlink: User #1 deleted ir.cron.progress records with IDs: [954, 955, 956, 957, 958, 959] 
+2025-09-12 08:38:10,984 8496 INFO odoo_db odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-09-12 08:38:10,991 8496 INFO odoo_db odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-09-12 08:38:10,997 8496 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 1 entries 
+2025-09-12 08:38:10,999 8496 INFO odoo_db odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-09-12 08:38:11,012 8496 INFO odoo_db odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-09-12 08:38:11,132 8496 INFO odoo_db odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-09-12 08:38:11,189 8496 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.280s 
+2025-09-12 08:38:11,190 8496 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-09-12 08:38:11,192 8496 INFO odoo_db odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-09-12 08:38:17,277 8496 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:38:17] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 97 0.014 0.015
+2025-09-12 08:38:21,756 8496 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:38:21] "POST /web/dataset/call_kw/ir.config_parameter/web_search_read HTTP/1.1" 200 - 3 0.002 0.005
+2025-09-12 08:39:56,416 8496 INFO odoo_db odoo.service.server: Initiating shutdown 
+2025-09-12 08:39:56,416 8496 INFO odoo_db odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-09-12 08:40:40,751 20052 INFO ? odoo: Odoo version 18.0 
+2025-09-12 08:40:40,751 20052 INFO ? odoo: Using configuration file at C:\Users\Springer\Documents\Project\odoo-dgii\odoo.conf 
+2025-09-12 08:40:40,751 20052 INFO ? odoo: addons paths: ['C:\\Users\\Springer\\Documents\\Project\\odoo-dgii\\odoo\\addons', 'c:\\users\\springer\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 'c:\\users\\springer\\documents\\project\\odoo-dgii\\addons', 'c:\\users\\springer\\documents\\project\\odoo-dgii\\custom\\addons', 'c:\\users\\springer\\documents\\project\\odoo-dgii\\odoo\\addons'] 
+2025-09-12 08:40:40,751 20052 INFO ? odoo: database: odoo_user@localhost:5432 
+2025-09-12 08:40:41,031 20052 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe 
+2025-09-12 08:40:41,099 20052 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at C:\Program Files\wkhtmltopdf\bin\wkhtmltoimage.exe 
+2025-09-12 08:40:42,575 20052 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-6C3QHU1:8069 
+2025-09-12 08:40:42,752 20052 INFO odoo_db odoo.modules.loading: loading 1 modules... 
+2025-09-12 08:40:42,755 20052 INFO odoo_db odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-09-12 08:40:42,768 20052 INFO odoo_db odoo.modules.loading: updating modules list 
+2025-09-12 08:40:42,770 20052 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2025-09-12 08:40:42,876 20052 WARNING odoo_db odoo.modules.module: Missing `license` key in manifest for 'dgii_invoicing', defaulting to LGPL-3 
+2025-09-12 08:40:43,580 20052 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['DGII Electronic Invoicing (Dominican Republic)'] to user __system__ #1 via n/a 
+2025-09-12 08:40:43,580 20052 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['DGII Electronic Invoicing (Dominican Republic)'] to user __system__ #1 via n/a 
+2025-09-12 08:40:43,962 20052 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2025-09-12 08:40:44,002 20052 INFO odoo_db odoo.modules.loading: loading 51 modules... 
+2025-09-12 08:40:44,578 20052 INFO odoo_db odoo.modules.loading: Loading module dgii_invoicing (51/51) 
+2025-09-12 08:40:44,720 20052 INFO odoo_db odoo.modules.registry: module dgii_invoicing: creating or updating database tables 
+2025-09-12 08:40:44,864 20052 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/security/ir.model.access.csv 
+2025-09-12 08:40:44,877 20052 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/account_move_views.xml 
+2025-09-12 08:40:44,925 20052 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/settings_views.xml 
+2025-09-12 08:40:44,932 20052 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_invoice_document.xml 
+2025-09-12 08:40:44,957 20052 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/views/report_credit_note_document.xml 
+2025-09-12 08:40:44,973 20052 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ir_sequence_data.xml 
+2025-09-12 08:40:44,979 20052 INFO odoo_db odoo.modules.loading: loading dgii_invoicing/data/ncf_sequence.xml 
+2025-09-12 08:40:44,997 20052 INFO odoo_db odoo.addons.base.models.ir_module: module dgii_invoicing: loading translation file c:\users\springer\documents\project\odoo-dgii\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-12 08:40:44,997 20052 INFO odoo_db odoo.tools.translate: loading base translation file c:\users\springer\documents\project\odoo-dgii\addons\dgii_invoicing\i18n\en.po for language en_US 
+2025-09-12 08:40:45,019 20052 INFO odoo_db odoo.modules.loading: Module dgii_invoicing loaded in 0.44s, 354 queries (+354 other) 
+2025-09-12 08:40:45,019 20052 INFO odoo_db odoo.modules.loading: 51 modules loaded in 1.02s, 354 queries (+354 extra) 
+2025-09-12 08:40:45,500 20052 INFO odoo_db odoo.modules.loading: Modules loaded. 
+2025-09-12 08:40:45,512 20052 INFO odoo_db odoo.modules.registry: Registry changed, signaling through the database 
+2025-09-12 08:40:45,512 20052 INFO odoo_db odoo.modules.registry: Registry loaded in 2.924s 
+2025-09-12 08:40:55,077 20052 INFO odoo_db odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-09-12 08:40:55,226 20052 WARNING odoo_db odoo.modules.module: Missing `license` key in manifest for 'dgii_invoicing', defaulting to LGPL-3 
+2025-09-12 08:40:55,730 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:40:55] "GET /odoo/system-parameters?debug=assets%2Ctests HTTP/1.1" 200 - 103 0.047 0.608
+2025-09-12 08:40:55,807 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:40:55] "GET /web/assets/debug/web.assets_web.css HTTP/1.1" 304 - 3 0.002 0.054
+2025-09-12 08:40:56,101 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:40:56] "GET /web/assets/debug/web.assets_web.js HTTP/1.1" 304 - 3 0.002 0.043
+2025-09-12 08:40:56,249 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:40:56] "GET /web/assets/debug/web.assets_tests.js HTTP/1.1" 304 - 3 0.002 0.002
+2025-09-12 08:40:56,513 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:40:56] "GET /web/assets/debug/web.assets_web_print.css HTTP/1.1" 304 - 3 0.002 0.013
+2025-09-12 08:40:56,645 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:40:56] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.003 0.004
+2025-09-12 08:40:56,852 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:40:56] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.002 0.004
+2025-09-12 08:40:57,177 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:40:57] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.000 0.003
+2025-09-12 08:40:57,515 20052 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-09-12 08:40:57,647 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:40:57] "POST /mail/data HTTP/1.1" 200 - 34 0.031 0.066
+2025-09-12 08:40:58,245 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:40:58] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.003
+2025-09-12 08:41:00,064 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:00] "POST /web/action/load HTTP/1.1" 200 - 11 0.004 0.004
+2025-09-12 08:41:00,075 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:00] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.003 0.007
+2025-09-12 08:41:00,336 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:00] "POST /web/dataset/call_kw/ir.config_parameter/get_views HTTP/1.1" 200 - 23 0.011 0.008
+2025-09-12 08:41:00,385 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:00] "POST /web/dataset/call_kw/ir.config_parameter/web_search_read HTTP/1.1" 200 - 3 0.002 0.001
+2025-09-12 08:41:00,656 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:00] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.003
+2025-09-12 08:41:02,563 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:02] "POST /web/action/load HTTP/1.1" 200 - 11 0.003 0.004
+2025-09-12 08:41:03,029 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:03] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 117 0.026 0.122
+2025-09-12 08:41:03,162 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:03] "POST /web/dataset/call_kw/account.move/web_search_read HTTP/1.1" 200 - 12 0.017 0.010
+2025-09-12 08:41:04,208 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:04] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 53 0.053 0.026
+2025-09-12 08:41:04,645 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:04] "POST /mail/thread/data HTTP/1.1" 200 - 33 0.015 0.013
+2025-09-12 08:41:04,678 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:04] "POST /mail/thread/messages HTTP/1.1" 200 - 21 0.023 0.009
+2025-09-12 08:41:06,031 20052 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: Processing invoice with company ID: 3 
+2025-09-12 08:41:06,031 20052 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: Getting NCF... 
+2025-09-12 08:41:06,032 20052 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: CF Code: 32 
+2025-09-12 08:41:06,062 20052 INFO odoo_db odoo.addons.dgii_invoicing.models.account_move: ENCF: E32000000007 
+2025-09-12 08:41:06,067 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:06] "POST /web/dataset/call_button/account.move/action_send_to_dgii HTTP/1.1" 200 - 34 0.012 0.028
+2025-09-12 08:41:06,378 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:06] "POST /mail/thread/messages HTTP/1.1" 200 - 3 0.001 0.004
+2025-09-12 08:41:06,463 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:06] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 39 0.062 0.026
+2025-09-12 08:41:06,660 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:06] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.009 0.011
+2025-09-12 08:41:15,408 20052 INFO odoo_db odoo.service.server: Initiating shutdown 
+2025-09-12 08:41:15,408 20052 INFO odoo_db odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-09-12 08:41:18,538 20052 INFO odoo_db werkzeug: 127.0.0.1 - - [12/Sep/2025 08:41:18] "GET /odoo/customer-invoices/187?debug=assets%2Ctests HTTP/1.1" 200 - 18 0.005 0.016
