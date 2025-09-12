@@ -83,6 +83,8 @@ class AccountMove(models.Model):
             # Require document type before confirming
             if not move.l10n_latam_document_type_id:
                 raise UserError("You must select a Document Type before confirming this invoice.")
+            
+        res = super().action_post()
 
         for move in self:
             if move.l10n_latam_document_type_id:
@@ -92,8 +94,6 @@ class AccountMove(models.Model):
                 move.name = f'{temp}({e_ncf})'
             else:
                 move.name = '/'
-
-        res = super().action_post()
 
         return res
 
