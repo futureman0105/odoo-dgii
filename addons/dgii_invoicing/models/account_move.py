@@ -25,7 +25,7 @@ class AccountMove(models.Model):
         ('rejected', 'Rejected'),
         ('error', 'Error')
     ], string='DGII Submission Status', default='not_sent')
-    dgii_response_log = fields.Text('DGII Response Log')
+    dgii_response_log = fields.Text('DGII Response Log') 
     dgii_response_code = fields.Char('DGII Response Code')
     dgii_response_message = fields.Text('DGII Response Message')
     dgii_codigo_seguridad = fields.Char(string="DGII Codigo Seguridad")
@@ -154,22 +154,23 @@ class AccountMove(models.Model):
         return self.dgii_ncf
 
     def _compute_qr_code(self):
+        
+        base_url = "https://ecf.dgii.gov.do/testecf/consultatimbre?" 
+
+        # self.base_url = https://ecf.dgii.gov.do/testeCF',
+                
         for move in self:
             invoice_date = move.invoice_date.strftime("%d-%m-%Y")
 
-            qr_dict = {
-                "RNC Emisor": move.company_id.vat,
-                "Razón Social Emisor": move.company_id.name,
-                "RNC Comprador": move.partner_id.vat or "",
-                "Razón Social Comprador": move.partner_id.name or "",
-                "e-NCF": move.test_ncf,
-                "Fecha de Emisión": str(invoice_date),
-                "Total de ITIBS": str(move.amount_tax),
-                # "Total de ITIBS": "16,016.95",
-                "Monto Total": str(move.amount_total),
-                # "Monto Total": "17,565.78",
-                "Estado": "Aceptado",
-            }
+            param = f"rncemisor={move.company_id.vat}"\
+                    f"&rnccomprador={move.partner_id.vat}"\
+                    f"&encf={move.test_ncf}" \
+                    f"&fechaemision={invoice_date}"\
+                    f"&montototal={move.amount_total}"\
+                    f"&FechaHoraFirma=08-09-2025 09:47:51"\
+                    f"&codigoseguridad={move.test_ncf}"
+
+            qr_data = base_url + param
 
             # move.get_code_signature("xml_str")
 
@@ -182,7 +183,7 @@ class AccountMove(models.Model):
             _logger.info(f'QR code Total de ITIBS : {move.amount_tax}')
             _logger.info(f'QR code Monto Total : {move.amount_total}')
 
-            qr_data = json.dumps(qr_dict, ensure_ascii=False)
+            # qr_data = json.dumps(qr_dict, ensure_ascii=False)
             qr_img = qrcode.make(qr_data)
 
             buffer = io.BytesIO()
