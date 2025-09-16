@@ -168,7 +168,7 @@ class DGIICFService:
         signed_xml = self.custom_sign_xml(xml_data, type='invoice')
         return signed_xml
 
-    def submit_ecf(self, signed_xml, token):
+    def submit_ecf(self, invoice_name, token):
         """
         Submit the signed e-CF XML to DGII.
         """
@@ -176,7 +176,7 @@ class DGIICFService:
         xml_file_path = os.path.join(os.path.dirname(__file__), '..', 'data/signed_invoice.xml')
 
         with open(xml_file_path, 'rb') as f:
-            files = {'xml': ('signed.xml', f, 'text/xml')}
+            files = {'xml': (f'{invoice_name}.xml', f, 'text/xml')}
             headers = {
                 'accept': 'application/json',
                 "Authorization": f"Bearer {token}"
